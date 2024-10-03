@@ -51,11 +51,11 @@ const WcNoSessions = () => {
 
   return (
     <>
-      <Typography variant="body2" textAlign="center" color="text.secondary">
+      {/* <Typography variant="body2" textAlign="center" color="text.secondary">
         No dApps are connected yet.{sampleDapps ? ' Try one of these:' : ''}
       </Typography>
 
-      {sampleDapps}
+      {sampleDapps} */}
     </>
   )
 }
