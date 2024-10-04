@@ -381,9 +381,7 @@ const FirstSteps = () => {
           </Grid>
 
           <Grid item xs={12} md={4}>
-            {isActivating ? (
-              <UsefulHintsWidget />
-            ) : isMultiSig ? (
+            {isActivating ? null : isMultiSig ? (
               <ActivateSafeWidget />
             ) : (
               <FirstTransactionWidget completed={hasOutgoingTransactions} />
