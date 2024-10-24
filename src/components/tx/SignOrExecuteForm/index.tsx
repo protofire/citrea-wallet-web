@@ -27,15 +27,13 @@ import { trackEvent } from '@/services/analytics'
 import useChainId from '@/hooks/useChainId'
 import ExecuteThroughRoleForm from './ExecuteThroughRoleForm'
 import { findAllowingRole, findMostLikelyRole, useRoles } from './ExecuteThroughRoleForm/hooks'
-import { isConfirmationViewOrder, isCustomTxInfo } from '@/utils/transaction-guards'
-import SwapOrderConfirmationView from '@/features/swap/components/SwapOrderConfirmationView'
-import { isSettingTwapFallbackHandler } from '@/features/swap/helpers/utils'
-import { TwapFallbackHandlerWarning } from '@/features/swap/components/TwapFallbackHandlerWarning'
+import { isAnyStakingTxInfo, isCustomTxInfo, isGenericConfirmation, isOrderTxInfo } from '@/utils/transaction-guards'
 import useIsSafeOwner from '@/hooks/useIsSafeOwner'
 import { BlockaidBalanceChanges } from '../security/blockaid/BlockaidBalanceChange'
 import { Blockaid } from '../security/blockaid'
 
 import TxData from '@/components/transactions/TxDetails/TxData'
+import ConfirmationOrder from '@/components/tx/ConfirmationOrder'
 import { useApprovalInfos } from '../ApprovalEditor/hooks/useApprovalInfos'
 
 import type { TransactionDetails } from '@safe-global/safe-gateway-typescript-sdk'
@@ -65,8 +63,13 @@ const trackTxEvents = (
   isCreation: boolean,
   isExecuted: boolean,
   isRoleExecution: boolean,
+  isDelegateCreation: boolean,
 ) => {
-  const creationEvent = isRoleExecution ? TX_EVENTS.CREATE_VIA_ROLE : TX_EVENTS.CREATE
+  const creationEvent = isRoleExecution
+    ? TX_EVENTS.CREATE_VIA_ROLE
+    : isDelegateCreation
+    ? TX_EVENTS.CREATE_VIA_DELEGATE
+    : TX_EVENTS.CREATE
   const executionEvent = isRoleExecution ? TX_EVENTS.EXECUTE_VIA_ROLE : TX_EVENTS.EXECUTE
   const event = isCreation ? creationEvent : isExecuted ? executionEvent : TX_EVENTS.CONFIRM
   const txType = getTransactionTrackingType(details)
@@ -97,7 +100,7 @@ export const SignOrExecuteForm = ({
   const [decodedData] = useDecodeTx(safeTx)
 
   const isBatchable = props.isBatchable !== false && safeTx && !isDelegateCall(safeTx)
-  const isSwapOrder = isConfirmationViewOrder(decodedData)
+
   const { data: txDetails } = useGetTransactionDetailsQuery(
     chainId && props.txId
       ? {
@@ -106,7 +109,12 @@ export const SignOrExecuteForm = ({
         }
       : skipToken,
   )
-  const showTxDetails = props.txId && txDetails && !isCustomTxInfo(txDetails.txInfo)
+  const showTxDetails =
+    props.txId &&
+    txDetails &&
+    !isCustomTxInfo(txDetails.txInfo) &&
+    !isAnyStakingTxInfo(txDetails.txInfo) &&
+    !isOrderTxInfo(txDetails.txInfo)
   const isDelegate = useIsWalletDelegate()
   const [trigger] = useLazyGetTransactionDetailsQuery()
   const [readableApprovals] = useApprovalInfos({ safeTransaction: safeTx })
@@ -115,7 +123,6 @@ export const SignOrExecuteForm = ({
   const { safe } = useSafeInfo()
   const isSafeOwner = useIsSafeOwner()
   const isCounterfactualSafe = !safe.deployed
-  const isChangingFallbackHandler = isSettingTwapFallbackHandler(decodedData)
 
   // Check if a Zodiac Roles mod is enabled and if the user is a member of any role that allows the transaction
   const roles = useRoles(
@@ -133,12 +140,12 @@ export const SignOrExecuteForm = ({
     (props.onlyExecute || shouldExecute) && canExecuteThroughRole && (!canExecute || preferThroughRole)
 
   const onFormSubmit = useCallback(
-    async (txId: string, isExecuted = false, isRoleExecution = false) => {
+    async (txId: string, isExecuted = false, isRoleExecution = false, isDelegateCreation = false) => {
       onSubmit?.(txId, isExecuted)
 
       const { data: details } = await trigger({ chainId, txId })
       // Track tx event
-      trackTxEvents(details, isCreation, isExecuted, isRoleExecution)
+      trackTxEvents(details, isCreation, isExecuted, isRoleExecution, isDelegateCreation)
     },
     [chainId, isCreation, onSubmit, trigger],
   )
@@ -148,16 +155,19 @@ export const SignOrExecuteForm = ({
     [onFormSubmit],
   )
 
+  const onDelegateFormSubmit = useCallback<typeof onFormSubmit>(
+    (txId, isExecuted) => onFormSubmit(txId, isExecuted, false, true),
+    [onFormSubmit],
+  )
+
   return (
     <>
       <TxCard>
         {props.children}
 
-        {isChangingFallbackHandler && <TwapFallbackHandlerWarning />}
-
-        {isSwapOrder && (
+        {decodedData && (
           <ErrorBoundary fallback={<></>}>
-            <SwapOrderConfirmationView order={decodedData} settlementContract={safeTx?.data.to ?? ''} />
+            <ConfirmationOrder decodedData={decodedData} toAddress={safeTx?.data.to ?? ''} />
           </ErrorBoundary>
         )}
 
@@ -172,7 +182,9 @@ export const SignOrExecuteForm = ({
               txId={props.txId}
               decodedData={decodedData}
               showMultisend={!props.isBatch}
-              showMethodCall={props.showMethodCall && !showTxDetails && !isSwapOrder && !isApproval}
+              showMethodCall={
+                props.showMethodCall && !showTxDetails && !isApproval && isGenericConfirmation(decodedData)
+              }
             />
           </ErrorBoundary>
         )}
@@ -228,7 +240,7 @@ export const SignOrExecuteForm = ({
           />
         )}
 
-        {isDelegate && <DelegateForm {...props} safeTx={safeTx} onSubmit={onFormSubmit} />}
+        {isDelegate && <DelegateForm {...props} safeTx={safeTx} onSubmit={onDelegateFormSubmit} />}
       </TxCard>
     </>
   )
