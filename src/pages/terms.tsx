@@ -591,10 +591,12 @@ const Terms: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{'Citrea Wallet – Terms'}</title>
+        <title>Citrea Wallet – Terms</title>
       </Head>
 
-      <main>{<SafeTerms />}</main>
+      <main>
+        <SafeTerms />
+      </main>
     </>
   )
 }
