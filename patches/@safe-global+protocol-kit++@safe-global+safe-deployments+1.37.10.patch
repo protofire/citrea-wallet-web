@@ -1,8 +1,8 @@
-diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/compatibility_fallback_handler.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/compatibility_fallback_handler.json
-index 775cb38..7306ddc 100644
---- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/compatibility_fallback_handler.json
-+++ b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/compatibility_fallback_handler.json
-@@ -17,15 +17,24 @@
+diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/compatibility_fallback_handler.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/compatibility_fallback_handler.json
+index bd4341d..db49506 100644
+--- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/compatibility_fallback_handler.json
++++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/compatibility_fallback_handler.json
+@@ -17,18 +17,27 @@
          }
      },
      "networkAddresses": {
@@ -21,9 +21,12 @@ index 775cb38..7306ddc 100644
 +        ],
          "11": "canonical",
          "12": "canonical",
+         "14": "canonical",
+         "16": "eip155",
 -        "18": "eip155",
--        "25": ["eip155", "canonical"],
 +        "5115": "eip155",
+         "19": "eip155",
+-        "25": ["eip155", "canonical"],
 +        "25": [
 +            "eip155",
 +            "canonical"
@@ -31,7 +34,7 @@ index 775cb38..7306ddc 100644
          "28": "eip155",
          "30": "canonical",
          "31": "canonical",
-@@ -33,12 +42,24 @@
+@@ -36,12 +45,24 @@
          "40": "canonical",
          "41": "canonical",
          "42": "canonical",
@@ -60,7 +63,7 @@ index 775cb38..7306ddc 100644
          "57": "eip155",
          "61": "eip155",
          "63": "eip155",
-@@ -46,9 +67,15 @@
+@@ -49,9 +70,15 @@
          "71": "canonical",
          "81": "eip155",
          "82": "eip155",
@@ -78,7 +81,7 @@ index 775cb38..7306ddc 100644
          "106": "eip155",
          "108": "eip155",
          "109": "eip155",
-@@ -61,11 +88,23 @@
+@@ -65,11 +92,23 @@
          "169": "canonical",
          "179": "eip155",
          "195": "eip155",
@@ -105,8 +108,8 @@ index 775cb38..7306ddc 100644
 +        ],
          "255": "eip155",
          "280": "zksync",
-         "288": "eip155",
-@@ -74,7 +113,10 @@
+         "282": "zksync",
+@@ -79,7 +118,10 @@
          "321": "canonical",
          "322": "canonical",
          "324": "zksync",
@@ -117,10 +120,16 @@ index 775cb38..7306ddc 100644
 +        ],
          "338": "eip155",
          "369": "canonical",
-         "420": "eip155",
-@@ -86,20 +128,32 @@
+         "388": "zksync",
+@@ -91,22 +133,37 @@
+         "592": "canonical",
          "595": "eip155",
          "599": "eip155",
+-        "648": ["canonical", "eip155"],
++        "648": [
++            "canonical",
++            "eip155"
++        ],
          "686": "eip155",
 -        "690": ["eip155", "canonical"],
 +        "690": [
@@ -155,12 +164,17 @@ index 775cb38..7306ddc 100644
          "1230": "eip155",
          "1231": "eip155",
          "1284": "canonical",
-@@ -124,8 +178,14 @@
+@@ -131,9 +188,18 @@
          "2020": "canonical",
          "2021": "canonical",
          "2039": "canonical",
+-        "2192": ["canonical", "eip155"],
 -        "2221": ["canonical", "eip155"],
 -        "2222": ["canonical", "eip155"],
++        "2192": [
++            "canonical",
++            "eip155"
++        ],
 +        "2221": [
 +            "canonical",
 +            "eip155"
@@ -172,7 +186,7 @@ index 775cb38..7306ddc 100644
          "2331": "canonical",
          "2358": "eip155",
          "2810": "eip155",
-@@ -142,26 +202,50 @@
+@@ -150,26 +216,50 @@
          "4689": "eip155",
          "4918": "canonical",
          "4919": "canonical",
@@ -231,7 +245,7 @@ index 775cb38..7306ddc 100644
          "9728": "eip155",
          "10000": "eip155",
          "10001": "eip155",
-@@ -181,8 +265,14 @@
+@@ -189,8 +279,14 @@
          "13337": "canonical",
          "13371": "eip155",
          "13473": "eip155",
@@ -248,12 +262,19 @@ index 775cb38..7306ddc 100644
          "17172": "eip155",
          "18231": "canonical",
          "18233": "canonical",
-@@ -190,13 +280,25 @@
-         "23294": "eip155",
+@@ -199,49 +295,91 @@
          "23295": "eip155",
          "28979": "canonical",
+         "33401": "canonical",
 -        "34443": ["canonical", "eip155"],
 +        "34443": [
++            "canonical",
++            "eip155"
++        ],
+         "35441": "canonical",
+         "35443": "canonical",
+-        "41455": ["canonical", "eip155"],
++        "41455": [
 +            "canonical",
 +            "eip155"
 +        ],
@@ -278,17 +299,31 @@ index 775cb38..7306ddc 100644
          "43288": "eip155",
          "44787": "canonical",
          "45000": "canonical",
-@@ -208,25 +310,46 @@
+         "47763": "canonical",
+         "47805": "canonical",
+         "48899": "eip155",
+-        "48900": ["canonical", "eip155"],
++        "48900": [
++            "canonical",
++            "eip155"
++        ],
+         "53457": "canonical",
+         "54211": "eip155",
          "56288": "eip155",
          "57000": "eip155",
          "58008": "canonical",
 -        "59140": ["canonical", "eip155"],
 -        "59144": ["canonical", "eip155"],
+-        "60808": ["canonical", "eip155"],
 +        "59140": [
 +            "canonical",
 +            "eip155"
 +        ],
 +        "59144": [
++            "canonical",
++            "eip155"
++        ],
++        "60808": [
 +            "canonical",
 +            "eip155"
 +        ],
@@ -311,6 +346,7 @@ index 775cb38..7306ddc 100644
 +            "eip155",
 +            "canonical"
 +        ],
+         "97435": "canonical",
          "103454": "eip155",
          "111188": "canonical",
 -        "128123": ["eip155", "canonical"],
@@ -332,7 +368,7 @@ index 775cb38..7306ddc 100644
          "200101": "canonical",
          "200202": "canonical",
          "200810": "canonical",
-@@ -234,43 +357,85 @@
+@@ -250,28 +388,58 @@
          "421611": "canonical",
          "421613": "canonical",
          "421614": "canonical",
@@ -362,6 +398,7 @@ index 775cb38..7306ddc 100644
 +            "canonical"
 +        ],
          "764984": "canonical",
+         "808813": "eip155",
          "810180": "zksync",
          "978657": "canonical",
 -        "6038361": ["eip155", "canonical"],
@@ -400,16 +437,18 @@ index 775cb38..7306ddc 100644
          "161221135": "canonical",
          "168587773": "canonical",
          "222000222": "canonical",
-         "245022926": "eip155",
-         "245022934": "eip155",
+@@ -280,10 +448,19 @@
+         "328527624": "canonical",
          "333000333": "canonical",
+         "476462898": "canonical",
 -        "666666666": ["canonical", "eip155"],
--        "999999999": ["canonical", "eip155"],
--        "1313161554": ["canonical", "eip155"],
 +        "666666666": [
 +            "canonical",
 +            "eip155"
 +        ],
+         "888888888": "canonical",
+-        "999999999": ["canonical", "eip155"],
+-        "1313161554": ["canonical", "eip155"],
 +        "999999999": [
 +            "canonical",
 +            "eip155"
@@ -419,8 +458,9 @@ index 775cb38..7306ddc 100644
 +            "eip155"
 +        ],
          "1313161555": "canonical",
+         "1511670449": "canonical",
          "1666600000": "eip155",
-         "1666700000": "eip155",
+@@ -291,7 +468,10 @@
          "11297108099": "canonical",
          "11297108109": "canonical",
          "37714555429": "canonical",
@@ -432,11 +472,11 @@ index 775cb38..7306ddc 100644
      },
      "abi": [
          {
-diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/create_call.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/create_call.json
-index 4a1118d..8b2517b 100644
---- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/create_call.json
-+++ b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/create_call.json
-@@ -17,15 +17,24 @@
+diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/create_call.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/create_call.json
+index 0675f78..a866f6a 100644
+--- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/create_call.json
++++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/create_call.json
+@@ -17,18 +17,27 @@
          }
      },
      "networkAddresses": {
@@ -455,9 +495,12 @@ index 4a1118d..8b2517b 100644
 +        ],
          "11": "canonical",
          "12": "canonical",
+         "14": "canonical",
+         "16": "eip155",
 -        "18": "eip155",
--        "25": ["eip155", "canonical"],
 +        "5115": "eip155",
+         "19": "eip155",
+-        "25": ["eip155", "canonical"],
 +        "25": [
 +            "eip155",
 +            "canonical"
@@ -465,7 +508,7 @@ index 4a1118d..8b2517b 100644
          "28": "eip155",
          "30": "canonical",
          "31": "canonical",
-@@ -33,12 +42,24 @@
+@@ -36,12 +45,24 @@
          "40": "canonical",
          "41": "canonical",
          "42": "canonical",
@@ -494,7 +537,7 @@ index 4a1118d..8b2517b 100644
          "57": "eip155",
          "61": "eip155",
          "63": "eip155",
-@@ -46,9 +67,15 @@
+@@ -49,9 +70,15 @@
          "71": "canonical",
          "81": "eip155",
          "82": "eip155",
@@ -512,7 +555,7 @@ index 4a1118d..8b2517b 100644
          "106": "eip155",
          "108": "eip155",
          "109": "eip155",
-@@ -61,11 +88,23 @@
+@@ -65,11 +92,23 @@
          "169": "canonical",
          "179": "eip155",
          "195": "eip155",
@@ -539,8 +582,8 @@ index 4a1118d..8b2517b 100644
 +        ],
          "255": "eip155",
          "280": "zksync",
-         "288": "eip155",
-@@ -74,7 +113,10 @@
+         "282": "zksync",
+@@ -79,7 +118,10 @@
          "321": "canonical",
          "322": "canonical",
          "324": "zksync",
@@ -551,10 +594,16 @@ index 4a1118d..8b2517b 100644
 +        ],
          "338": "eip155",
          "369": "canonical",
-         "420": "eip155",
-@@ -86,20 +128,32 @@
+         "388": "zksync",
+@@ -91,22 +133,37 @@
+         "592": "canonical",
          "595": "eip155",
          "599": "eip155",
+-        "648": ["canonical", "eip155"],
++        "648": [
++            "canonical",
++            "eip155"
++        ],
          "686": "eip155",
 -        "690": ["eip155", "canonical"],
 +        "690": [
@@ -589,12 +638,17 @@ index 4a1118d..8b2517b 100644
          "1230": "eip155",
          "1231": "eip155",
          "1284": "canonical",
-@@ -124,8 +178,14 @@
+@@ -131,9 +188,18 @@
          "2020": "canonical",
          "2021": "canonical",
          "2039": "canonical",
+-        "2192": ["canonical", "eip155"],
 -        "2221": ["canonical", "eip155"],
 -        "2222": ["canonical", "eip155"],
++        "2192": [
++            "canonical",
++            "eip155"
++        ],
 +        "2221": [
 +            "canonical",
 +            "eip155"
@@ -606,7 +660,7 @@ index 4a1118d..8b2517b 100644
          "2331": "canonical",
          "2358": "eip155",
          "2810": "eip155",
-@@ -142,26 +202,50 @@
+@@ -150,26 +216,50 @@
          "4689": "eip155",
          "4918": "canonical",
          "4919": "canonical",
@@ -665,7 +719,7 @@ index 4a1118d..8b2517b 100644
          "9728": "eip155",
          "10000": "eip155",
          "10001": "eip155",
-@@ -181,8 +265,14 @@
+@@ -189,8 +279,14 @@
          "13337": "canonical",
          "13371": "eip155",
          "13473": "eip155",
@@ -682,12 +736,19 @@ index 4a1118d..8b2517b 100644
          "17172": "eip155",
          "18231": "canonical",
          "18233": "canonical",
-@@ -190,13 +280,25 @@
-         "23294": "eip155",
+@@ -199,49 +295,91 @@
          "23295": "eip155",
          "28979": "canonical",
+         "33401": "canonical",
 -        "34443": ["canonical", "eip155"],
 +        "34443": [
++            "canonical",
++            "eip155"
++        ],
+         "35441": "canonical",
+         "35443": "canonical",
+-        "41455": ["canonical", "eip155"],
++        "41455": [
 +            "canonical",
 +            "eip155"
 +        ],
@@ -712,17 +773,31 @@ index 4a1118d..8b2517b 100644
          "43288": "eip155",
          "44787": "canonical",
          "45000": "canonical",
-@@ -208,25 +310,46 @@
+         "47763": "canonical",
+         "47805": "canonical",
+         "48899": "eip155",
+-        "48900": ["canonical", "eip155"],
++        "48900": [
++            "canonical",
++            "eip155"
++        ],
+         "53457": "canonical",
+         "54211": "eip155",
          "56288": "eip155",
          "57000": "eip155",
          "58008": "canonical",
 -        "59140": ["canonical", "eip155"],
 -        "59144": ["canonical", "eip155"],
+-        "60808": ["canonical", "eip155"],
 +        "59140": [
 +            "canonical",
 +            "eip155"
 +        ],
 +        "59144": [
++            "canonical",
++            "eip155"
++        ],
++        "60808": [
 +            "canonical",
 +            "eip155"
 +        ],
@@ -745,6 +820,7 @@ index 4a1118d..8b2517b 100644
 +            "eip155",
 +            "canonical"
 +        ],
+         "97435": "canonical",
          "103454": "eip155",
          "111188": "canonical",
 -        "128123": ["eip155", "canonical"],
@@ -766,7 +842,7 @@ index 4a1118d..8b2517b 100644
          "200101": "canonical",
          "200202": "canonical",
          "200810": "canonical",
-@@ -234,43 +357,85 @@
+@@ -250,28 +388,58 @@
          "421611": "canonical",
          "421613": "canonical",
          "421614": "canonical",
@@ -796,6 +872,7 @@ index 4a1118d..8b2517b 100644
 +            "canonical"
 +        ],
          "764984": "canonical",
+         "808813": "eip155",
          "810180": "zksync",
          "978657": "canonical",
 -        "6038361": ["eip155", "canonical"],
@@ -834,16 +911,18 @@ index 4a1118d..8b2517b 100644
          "161221135": "canonical",
          "168587773": "canonical",
          "222000222": "canonical",
-         "245022926": "eip155",
-         "245022934": "eip155",
+@@ -280,10 +448,19 @@
+         "328527624": "canonical",
          "333000333": "canonical",
+         "476462898": "canonical",
 -        "666666666": ["canonical", "eip155"],
--        "999999999": ["canonical", "eip155"],
--        "1313161554": ["canonical", "eip155"],
 +        "666666666": [
 +            "canonical",
 +            "eip155"
 +        ],
+         "888888888": "canonical",
+-        "999999999": ["canonical", "eip155"],
+-        "1313161554": ["canonical", "eip155"],
 +        "999999999": [
 +            "canonical",
 +            "eip155"
@@ -853,8 +932,9 @@ index 4a1118d..8b2517b 100644
 +            "eip155"
 +        ],
          "1313161555": "canonical",
+         "1511670449": "canonical",
          "1666600000": "eip155",
-         "1666700000": "eip155",
+@@ -291,7 +468,10 @@
          "11297108099": "canonical",
          "11297108109": "canonical",
          "37714555429": "canonical",
@@ -866,11 +946,11 @@ index 4a1118d..8b2517b 100644
      },
      "abi": [
          {
-diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe.json
-index 0dbdd9e..7bd8880 100644
---- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe.json
-+++ b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe.json
-@@ -17,15 +17,24 @@
+diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe.json
+index bfc9e27..beeab3e 100644
+--- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe.json
++++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe.json
+@@ -17,18 +17,27 @@
          }
      },
      "networkAddresses": {
@@ -889,9 +969,12 @@ index 0dbdd9e..7bd8880 100644
 +        ],
          "11": "canonical",
          "12": "canonical",
+         "14": "canonical",
+         "16": "eip155",
 -        "18": "eip155",
--        "25": ["eip155", "canonical"],
 +        "5115": "eip155",
+         "19": "eip155",
+-        "25": ["eip155", "canonical"],
 +        "25": [
 +            "eip155",
 +            "canonical"
@@ -899,7 +982,7 @@ index 0dbdd9e..7bd8880 100644
          "28": "eip155",
          "30": "canonical",
          "31": "canonical",
-@@ -33,12 +42,24 @@
+@@ -36,12 +45,24 @@
          "40": "canonical",
          "41": "canonical",
          "42": "canonical",
@@ -928,7 +1011,7 @@ index 0dbdd9e..7bd8880 100644
          "57": "eip155",
          "61": "eip155",
          "63": "eip155",
-@@ -46,9 +67,15 @@
+@@ -49,9 +70,15 @@
          "71": "canonical",
          "81": "eip155",
          "82": "eip155",
@@ -946,7 +1029,7 @@ index 0dbdd9e..7bd8880 100644
          "106": "eip155",
          "108": "eip155",
          "109": "eip155",
-@@ -61,11 +88,23 @@
+@@ -65,11 +92,23 @@
          "169": "canonical",
          "179": "eip155",
          "195": "eip155",
@@ -973,8 +1056,8 @@ index 0dbdd9e..7bd8880 100644
 +        ],
          "255": "eip155",
          "280": "zksync",
-         "288": "eip155",
-@@ -74,7 +113,10 @@
+         "282": "zksync",
+@@ -79,7 +118,10 @@
          "321": "canonical",
          "322": "canonical",
          "324": "zksync",
@@ -985,10 +1068,16 @@ index 0dbdd9e..7bd8880 100644
 +        ],
          "338": "eip155",
          "369": "canonical",
-         "420": "eip155",
-@@ -86,20 +128,32 @@
+         "388": "zksync",
+@@ -91,22 +133,37 @@
+         "592": "canonical",
          "595": "eip155",
          "599": "eip155",
+-        "648": ["canonical", "eip155"],
++        "648": [
++            "canonical",
++            "eip155"
++        ],
          "686": "eip155",
 -        "690": ["eip155", "canonical"],
 +        "690": [
@@ -1023,12 +1112,17 @@ index 0dbdd9e..7bd8880 100644
          "1230": "eip155",
          "1231": "eip155",
          "1284": "canonical",
-@@ -124,8 +178,14 @@
+@@ -131,9 +188,18 @@
          "2020": "canonical",
          "2021": "canonical",
          "2039": "canonical",
+-        "2192": ["canonical", "eip155"],
 -        "2221": ["canonical", "eip155"],
 -        "2222": ["canonical", "eip155"],
++        "2192": [
++            "canonical",
++            "eip155"
++        ],
 +        "2221": [
 +            "canonical",
 +            "eip155"
@@ -1040,7 +1134,7 @@ index 0dbdd9e..7bd8880 100644
          "2331": "canonical",
          "2358": "eip155",
          "2810": "eip155",
-@@ -142,26 +202,50 @@
+@@ -150,26 +216,50 @@
          "4689": "eip155",
          "4918": "canonical",
          "4919": "canonical",
@@ -1099,7 +1193,7 @@ index 0dbdd9e..7bd8880 100644
          "9728": "eip155",
          "10000": "eip155",
          "10001": "eip155",
-@@ -181,8 +265,14 @@
+@@ -189,8 +279,14 @@
          "13337": "canonical",
          "13371": "eip155",
          "13473": "eip155",
@@ -1116,12 +1210,19 @@ index 0dbdd9e..7bd8880 100644
          "17172": "eip155",
          "18231": "canonical",
          "18233": "canonical",
-@@ -190,13 +280,25 @@
-         "23294": "eip155",
+@@ -199,49 +295,91 @@
          "23295": "eip155",
          "28979": "canonical",
+         "33401": "canonical",
 -        "34443": ["canonical", "eip155"],
 +        "34443": [
++            "canonical",
++            "eip155"
++        ],
+         "35441": "canonical",
+         "35443": "canonical",
+-        "41455": ["canonical", "eip155"],
++        "41455": [
 +            "canonical",
 +            "eip155"
 +        ],
@@ -1146,17 +1247,31 @@ index 0dbdd9e..7bd8880 100644
          "43288": "eip155",
          "44787": "canonical",
          "45000": "canonical",
-@@ -208,25 +310,46 @@
+         "47763": "canonical",
+         "47805": "canonical",
+         "48899": "eip155",
+-        "48900": ["canonical", "eip155"],
++        "48900": [
++            "canonical",
++            "eip155"
++        ],
+         "53457": "canonical",
+         "54211": "eip155",
          "56288": "eip155",
          "57000": "eip155",
          "58008": "canonical",
 -        "59140": ["canonical", "eip155"],
 -        "59144": ["canonical", "eip155"],
+-        "60808": ["canonical", "eip155"],
 +        "59140": [
 +            "canonical",
 +            "eip155"
 +        ],
 +        "59144": [
++            "canonical",
++            "eip155"
++        ],
++        "60808": [
 +            "canonical",
 +            "eip155"
 +        ],
@@ -1179,6 +1294,7 @@ index 0dbdd9e..7bd8880 100644
 +            "eip155",
 +            "canonical"
 +        ],
+         "97435": "canonical",
          "103454": "eip155",
          "111188": "canonical",
 -        "128123": ["eip155", "canonical"],
@@ -1200,7 +1316,7 @@ index 0dbdd9e..7bd8880 100644
          "200101": "canonical",
          "200202": "canonical",
          "200810": "canonical",
-@@ -234,43 +357,85 @@
+@@ -250,28 +388,58 @@
          "421611": "canonical",
          "421613": "canonical",
          "421614": "canonical",
@@ -1230,6 +1346,7 @@ index 0dbdd9e..7bd8880 100644
 +            "canonical"
 +        ],
          "764984": "canonical",
+         "808813": "eip155",
          "810180": "zksync",
          "978657": "canonical",
 -        "6038361": ["eip155", "canonical"],
@@ -1268,16 +1385,18 @@ index 0dbdd9e..7bd8880 100644
          "161221135": "canonical",
          "168587773": "canonical",
          "222000222": "canonical",
-         "245022926": "eip155",
-         "245022934": "eip155",
+@@ -280,10 +448,19 @@
+         "328527624": "canonical",
          "333000333": "canonical",
+         "476462898": "canonical",
 -        "666666666": ["canonical", "eip155"],
--        "999999999": ["canonical", "eip155"],
--        "1313161554": ["canonical", "eip155"],
 +        "666666666": [
 +            "canonical",
 +            "eip155"
 +        ],
+         "888888888": "canonical",
+-        "999999999": ["canonical", "eip155"],
+-        "1313161554": ["canonical", "eip155"],
 +        "999999999": [
 +            "canonical",
 +            "eip155"
@@ -1287,8 +1406,9 @@ index 0dbdd9e..7bd8880 100644
 +            "eip155"
 +        ],
          "1313161555": "canonical",
+         "1511670449": "canonical",
          "1666600000": "eip155",
-         "1666700000": "eip155",
+@@ -291,7 +468,10 @@
          "11297108099": "canonical",
          "11297108109": "canonical",
          "37714555429": "canonical",
@@ -1300,11 +1420,11 @@ index 0dbdd9e..7bd8880 100644
      },
      "abi": [
          {
-diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe_l2.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe_l2.json
-index 3b1c2f3..bbba573 100644
---- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe_l2.json
-+++ b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe_l2.json
-@@ -17,15 +17,24 @@
+diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe_l2.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe_l2.json
+index 01114ac..a0a8710 100644
+--- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe_l2.json
++++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe_l2.json
+@@ -17,18 +17,27 @@
          }
      },
      "networkAddresses": {
@@ -1323,9 +1443,12 @@ index 3b1c2f3..bbba573 100644
 +        ],
          "11": "canonical",
          "12": "canonical",
+         "14": "canonical",
+         "16": "eip155",
 -        "18": "eip155",
--        "25": ["eip155", "canonical"],
 +        "5115": "eip155",
+         "19": "eip155",
+-        "25": ["eip155", "canonical"],
 +        "25": [
 +            "eip155",
 +            "canonical"
@@ -1333,7 +1456,7 @@ index 3b1c2f3..bbba573 100644
          "28": "eip155",
          "30": "canonical",
          "31": "canonical",
-@@ -33,12 +42,24 @@
+@@ -36,12 +45,24 @@
          "40": "canonical",
          "41": "canonical",
          "42": "canonical",
@@ -1362,7 +1485,7 @@ index 3b1c2f3..bbba573 100644
          "57": "eip155",
          "61": "eip155",
          "63": "eip155",
-@@ -46,9 +67,15 @@
+@@ -49,9 +70,15 @@
          "71": "canonical",
          "81": "eip155",
          "82": "eip155",
@@ -1380,7 +1503,7 @@ index 3b1c2f3..bbba573 100644
          "106": "eip155",
          "108": "eip155",
          "109": "eip155",
-@@ -61,11 +88,23 @@
+@@ -65,11 +92,23 @@
          "169": "canonical",
          "179": "eip155",
          "195": "eip155",
@@ -1407,8 +1530,8 @@ index 3b1c2f3..bbba573 100644
 +        ],
          "255": "eip155",
          "280": "zksync",
-         "288": "eip155",
-@@ -74,7 +113,10 @@
+         "282": "zksync",
+@@ -79,7 +118,10 @@
          "321": "canonical",
          "322": "canonical",
          "324": "zksync",
@@ -1419,10 +1542,16 @@ index 3b1c2f3..bbba573 100644
 +        ],
          "338": "eip155",
          "369": "canonical",
-         "420": "eip155",
-@@ -86,20 +128,32 @@
+         "388": "zksync",
+@@ -91,22 +133,37 @@
+         "592": "canonical",
          "595": "eip155",
          "599": "eip155",
+-        "648": ["canonical", "eip155"],
++        "648": [
++            "canonical",
++            "eip155"
++        ],
          "686": "eip155",
 -        "690": ["eip155", "canonical"],
 +        "690": [
@@ -1457,12 +1586,17 @@ index 3b1c2f3..bbba573 100644
          "1230": "eip155",
          "1231": "eip155",
          "1284": "canonical",
-@@ -124,8 +178,14 @@
+@@ -131,9 +188,18 @@
          "2020": "canonical",
          "2021": "canonical",
          "2039": "canonical",
+-        "2192": ["canonical", "eip155"],
 -        "2221": ["canonical", "eip155"],
 -        "2222": ["canonical", "eip155"],
++        "2192": [
++            "canonical",
++            "eip155"
++        ],
 +        "2221": [
 +            "canonical",
 +            "eip155"
@@ -1474,7 +1608,7 @@ index 3b1c2f3..bbba573 100644
          "2331": "canonical",
          "2358": "eip155",
          "2810": "eip155",
-@@ -142,26 +202,50 @@
+@@ -150,26 +216,50 @@
          "4689": "eip155",
          "4918": "canonical",
          "4919": "canonical",
@@ -1533,7 +1667,7 @@ index 3b1c2f3..bbba573 100644
          "9728": "eip155",
          "10000": "eip155",
          "10001": "eip155",
-@@ -181,8 +265,14 @@
+@@ -189,8 +279,14 @@
          "13337": "canonical",
          "13371": "eip155",
          "13473": "eip155",
@@ -1550,12 +1684,19 @@ index 3b1c2f3..bbba573 100644
          "17172": "eip155",
          "18231": "canonical",
          "18233": "canonical",
-@@ -190,13 +280,25 @@
-         "23294": "eip155",
+@@ -199,49 +295,91 @@
          "23295": "eip155",
          "28979": "canonical",
+         "33401": "canonical",
 -        "34443": ["canonical", "eip155"],
 +        "34443": [
++            "canonical",
++            "eip155"
++        ],
+         "35441": "canonical",
+         "35443": "canonical",
+-        "41455": ["canonical", "eip155"],
++        "41455": [
 +            "canonical",
 +            "eip155"
 +        ],
@@ -1580,13 +1721,27 @@ index 3b1c2f3..bbba573 100644
          "43288": "eip155",
          "44787": "canonical",
          "45000": "canonical",
-@@ -208,25 +310,46 @@
+         "47763": "canonical",
+         "47805": "canonical",
+         "48899": "eip155",
+-        "48900": ["canonical", "eip155"],
++        "48900": [
++            "canonical",
++            "eip155"
++        ],
+         "53457": "canonical",
+         "54211": "eip155",
          "56288": "eip155",
          "57000": "eip155",
          "58008": "canonical",
 -        "59140": ["canonical", "eip155"],
+-        "60808": ["canonical", "eip155"],
 -        "59144": ["canonical", "eip155"],
 +        "59140": [
++            "canonical",
++            "eip155"
++        ],
++        "60808": [
 +            "canonical",
 +            "eip155"
 +        ],
@@ -1613,6 +1768,7 @@ index 3b1c2f3..bbba573 100644
 +            "eip155",
 +            "canonical"
 +        ],
+         "97435": "canonical",
          "103454": "eip155",
          "111188": "canonical",
 -        "128123": ["eip155", "canonical"],
@@ -1634,7 +1790,7 @@ index 3b1c2f3..bbba573 100644
          "200101": "canonical",
          "200202": "canonical",
          "200810": "canonical",
-@@ -234,43 +357,85 @@
+@@ -250,28 +388,58 @@
          "421611": "canonical",
          "421613": "canonical",
          "421614": "canonical",
@@ -1664,6 +1820,7 @@ index 3b1c2f3..bbba573 100644
 +            "canonical"
 +        ],
          "764984": "canonical",
+         "808813": "eip155",
          "810180": "zksync",
          "978657": "canonical",
 -        "6038361": ["eip155", "canonical"],
@@ -1702,16 +1859,18 @@ index 3b1c2f3..bbba573 100644
          "161221135": "canonical",
          "168587773": "canonical",
          "222000222": "canonical",
-         "245022926": "eip155",
-         "245022934": "eip155",
+@@ -280,10 +448,19 @@
+         "328527624": "canonical",
          "333000333": "canonical",
+         "476462898": "canonical",
 -        "666666666": ["canonical", "eip155"],
--        "999999999": ["canonical", "eip155"],
--        "1313161554": ["canonical", "eip155"],
 +        "666666666": [
 +            "canonical",
 +            "eip155"
 +        ],
+         "888888888": "canonical",
+-        "999999999": ["canonical", "eip155"],
+-        "1313161554": ["canonical", "eip155"],
 +        "999999999": [
 +            "canonical",
 +            "eip155"
@@ -1721,8 +1880,9 @@ index 3b1c2f3..bbba573 100644
 +            "eip155"
 +        ],
          "1313161555": "canonical",
+         "1511670449": "canonical",
          "1666600000": "eip155",
-         "1666700000": "eip155",
+@@ -291,7 +468,10 @@
          "11297108099": "canonical",
          "11297108109": "canonical",
          "37714555429": "canonical",
@@ -1734,11 +1894,11 @@ index 3b1c2f3..bbba573 100644
      },
      "abi": [
          {
-diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send.json
-index 8978038..9e7ac03 100644
---- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send.json
-+++ b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send.json
-@@ -17,15 +17,24 @@
+diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send.json
+index 58146b8..0ef9526 100644
+--- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send.json
++++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send.json
+@@ -17,18 +17,27 @@
          }
      },
      "networkAddresses": {
@@ -1757,9 +1917,12 @@ index 8978038..9e7ac03 100644
 +        ],
          "11": "canonical",
          "12": "canonical",
+         "14": "canonical",
+         "16": "eip155",
 -        "18": "eip155",
--        "25": ["eip155", "canonical"],
 +        "5115": "eip155",
+         "19": "eip155",
+-        "25": ["eip155", "canonical"],
 +        "25": [
 +            "eip155",
 +            "canonical"
@@ -1767,7 +1930,7 @@ index 8978038..9e7ac03 100644
          "28": "eip155",
          "30": "canonical",
          "31": "canonical",
-@@ -33,12 +42,24 @@
+@@ -36,12 +45,24 @@
          "40": "canonical",
          "41": "canonical",
          "42": "canonical",
@@ -1796,7 +1959,7 @@ index 8978038..9e7ac03 100644
          "57": "eip155",
          "61": "eip155",
          "63": "eip155",
-@@ -46,9 +67,15 @@
+@@ -49,9 +70,15 @@
          "71": "canonical",
          "81": "eip155",
          "82": "eip155",
@@ -1814,7 +1977,7 @@ index 8978038..9e7ac03 100644
          "106": "eip155",
          "108": "eip155",
          "109": "eip155",
-@@ -61,11 +88,23 @@
+@@ -65,11 +92,23 @@
          "169": "canonical",
          "179": "eip155",
          "195": "eip155",
@@ -1841,8 +2004,8 @@ index 8978038..9e7ac03 100644
 +        ],
          "255": "eip155",
          "280": "zksync",
-         "288": "eip155",
-@@ -74,7 +113,10 @@
+         "282": "zksync",
+@@ -79,7 +118,10 @@
          "321": "canonical",
          "322": "canonical",
          "324": "zksync",
@@ -1853,10 +2016,16 @@ index 8978038..9e7ac03 100644
 +        ],
          "338": "eip155",
          "369": "canonical",
-         "420": "eip155",
-@@ -86,20 +128,32 @@
+         "388": "zksync",
+@@ -91,22 +133,37 @@
+         "592": "canonical",
          "595": "eip155",
          "599": "eip155",
+-        "648": ["canonical", "eip155"],
++        "648": [
++            "canonical",
++            "eip155"
++        ],
          "686": "eip155",
 -        "690": ["eip155", "canonical"],
 +        "690": [
@@ -1891,12 +2060,17 @@ index 8978038..9e7ac03 100644
          "1230": "eip155",
          "1231": "eip155",
          "1284": "canonical",
-@@ -124,8 +178,14 @@
+@@ -131,9 +188,18 @@
          "2020": "canonical",
          "2021": "canonical",
          "2039": "canonical",
+-        "2192": ["canonical", "eip155"],
 -        "2221": ["canonical", "eip155"],
 -        "2222": ["canonical", "eip155"],
++        "2192": [
++            "canonical",
++            "eip155"
++        ],
 +        "2221": [
 +            "canonical",
 +            "eip155"
@@ -1908,7 +2082,7 @@ index 8978038..9e7ac03 100644
          "2331": "canonical",
          "2358": "eip155",
          "2810": "eip155",
-@@ -142,26 +202,50 @@
+@@ -150,26 +216,50 @@
          "4689": "eip155",
          "4918": "canonical",
          "4919": "canonical",
@@ -1967,7 +2141,7 @@ index 8978038..9e7ac03 100644
          "9728": "eip155",
          "10000": "eip155",
          "10001": "eip155",
-@@ -181,8 +265,14 @@
+@@ -189,8 +279,14 @@
          "13337": "canonical",
          "13371": "eip155",
          "13473": "eip155",
@@ -1984,12 +2158,19 @@ index 8978038..9e7ac03 100644
          "17172": "eip155",
          "18231": "canonical",
          "18233": "canonical",
-@@ -190,13 +280,25 @@
-         "23294": "eip155",
+@@ -199,49 +295,91 @@
          "23295": "eip155",
          "28979": "canonical",
+         "33401": "canonical",
 -        "34443": ["canonical", "eip155"],
 +        "34443": [
++            "canonical",
++            "eip155"
++        ],
+         "35441": "canonical",
+         "35443": "canonical",
+-        "41455": ["canonical", "eip155"],
++        "41455": [
 +            "canonical",
 +            "eip155"
 +        ],
@@ -2014,17 +2195,31 @@ index 8978038..9e7ac03 100644
          "43288": "eip155",
          "44787": "canonical",
          "45000": "canonical",
-@@ -208,25 +310,46 @@
+         "47763": "canonical",
+         "47805": "canonical",
+         "48899": "eip155",
+-        "48900": ["canonical", "eip155"],
++        "48900": [
++            "canonical",
++            "eip155"
++        ],
+         "53457": "canonical",
+         "54211": "eip155",
          "56288": "eip155",
          "57000": "eip155",
          "58008": "canonical",
 -        "59140": ["canonical", "eip155"],
 -        "59144": ["canonical", "eip155"],
+-        "60808": ["canonical", "eip155"],
 +        "59140": [
 +            "canonical",
 +            "eip155"
 +        ],
 +        "59144": [
++            "canonical",
++            "eip155"
++        ],
++        "60808": [
 +            "canonical",
 +            "eip155"
 +        ],
@@ -2047,6 +2242,7 @@ index 8978038..9e7ac03 100644
 +            "eip155",
 +            "canonical"
 +        ],
+         "97435": "canonical",
          "103454": "eip155",
          "111188": "canonical",
 -        "128123": ["eip155", "canonical"],
@@ -2068,7 +2264,7 @@ index 8978038..9e7ac03 100644
          "200101": "canonical",
          "200202": "canonical",
          "200810": "canonical",
-@@ -234,43 +357,85 @@
+@@ -250,28 +388,58 @@
          "421611": "canonical",
          "421613": "canonical",
          "421614": "canonical",
@@ -2098,6 +2294,7 @@ index 8978038..9e7ac03 100644
 +            "canonical"
 +        ],
          "764984": "canonical",
+         "808813": "eip155",
          "810180": "zksync",
          "978657": "canonical",
 -        "6038361": ["eip155", "canonical"],
@@ -2136,16 +2333,18 @@ index 8978038..9e7ac03 100644
          "161221135": "canonical",
          "168587773": "canonical",
          "222000222": "canonical",
-         "245022926": "eip155",
-         "245022934": "eip155",
+@@ -280,10 +448,19 @@
+         "328527624": "canonical",
          "333000333": "canonical",
+         "476462898": "canonical",
 -        "666666666": ["canonical", "eip155"],
--        "999999999": ["canonical", "eip155"],
--        "1313161554": ["canonical", "eip155"],
 +        "666666666": [
 +            "canonical",
 +            "eip155"
 +        ],
+         "888888888": "canonical",
+-        "999999999": ["canonical", "eip155"],
+-        "1313161554": ["canonical", "eip155"],
 +        "999999999": [
 +            "canonical",
 +            "eip155"
@@ -2155,8 +2354,9 @@ index 8978038..9e7ac03 100644
 +            "eip155"
 +        ],
          "1313161555": "canonical",
+         "1511670449": "canonical",
          "1666600000": "eip155",
-         "1666700000": "eip155",
+@@ -291,7 +468,10 @@
          "11297108099": "canonical",
          "11297108109": "canonical",
          "37714555429": "canonical",
@@ -2168,11 +2368,11 @@ index 8978038..9e7ac03 100644
      },
      "abi": [
          {
-diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send_call_only.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send_call_only.json
-index 3586cb7..745dae5 100644
---- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send_call_only.json
-+++ b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send_call_only.json
-@@ -17,15 +17,24 @@
+diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send_call_only.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send_call_only.json
+index 104089b..7f22748 100644
+--- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send_call_only.json
++++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send_call_only.json
+@@ -17,18 +17,27 @@
          }
      },
      "networkAddresses": {
@@ -2191,9 +2391,12 @@ index 3586cb7..745dae5 100644
 +        ],
          "11": "canonical",
          "12": "canonical",
+         "14": "canonical",
+         "16": "eip155",
 -        "18": "eip155",
--        "25": ["eip155", "canonical"],
 +        "5115": "eip155",
+         "19": "eip155",
+-        "25": ["eip155", "canonical"],
 +        "25": [
 +            "eip155",
 +            "canonical"
@@ -2201,7 +2404,7 @@ index 3586cb7..745dae5 100644
          "28": "eip155",
          "30": "canonical",
          "31": "canonical",
-@@ -33,12 +42,24 @@
+@@ -36,12 +45,24 @@
          "40": "canonical",
          "41": "canonical",
          "42": "canonical",
@@ -2230,7 +2433,7 @@ index 3586cb7..745dae5 100644
          "57": "eip155",
          "61": "eip155",
          "63": "eip155",
-@@ -46,9 +67,15 @@
+@@ -49,9 +70,15 @@
          "71": "canonical",
          "81": "eip155",
          "82": "eip155",
@@ -2248,7 +2451,7 @@ index 3586cb7..745dae5 100644
          "106": "eip155",
          "108": "eip155",
          "109": "eip155",
-@@ -61,11 +88,23 @@
+@@ -65,11 +92,23 @@
          "169": "canonical",
          "179": "eip155",
          "195": "eip155",
@@ -2275,8 +2478,8 @@ index 3586cb7..745dae5 100644
 +        ],
          "255": "eip155",
          "280": "zksync",
-         "288": "eip155",
-@@ -74,7 +113,10 @@
+         "282": "zksync",
+@@ -79,7 +118,10 @@
          "321": "canonical",
          "322": "canonical",
          "324": "zksync",
@@ -2287,10 +2490,16 @@ index 3586cb7..745dae5 100644
 +        ],
          "338": "eip155",
          "369": "canonical",
-         "420": "eip155",
-@@ -86,20 +128,32 @@
+         "388": "zksync",
+@@ -91,22 +133,37 @@
+         "592": "canonical",
          "595": "eip155",
          "599": "eip155",
+-        "648": ["canonical", "eip155"],
++        "648": [
++            "canonical",
++            "eip155"
++        ],
          "686": "eip155",
 -        "690": ["eip155", "canonical"],
 +        "690": [
@@ -2325,12 +2534,17 @@ index 3586cb7..745dae5 100644
          "1230": "eip155",
          "1231": "eip155",
          "1284": "canonical",
-@@ -124,8 +178,14 @@
+@@ -131,9 +188,18 @@
          "2020": "canonical",
          "2021": "canonical",
          "2039": "canonical",
+-        "2192": ["canonical", "eip155"],
 -        "2221": ["canonical", "eip155"],
 -        "2222": ["canonical", "eip155"],
++        "2192": [
++            "canonical",
++            "eip155"
++        ],
 +        "2221": [
 +            "canonical",
 +            "eip155"
@@ -2342,7 +2556,7 @@ index 3586cb7..745dae5 100644
          "2331": "canonical",
          "2358": "eip155",
          "2810": "eip155",
-@@ -142,26 +202,50 @@
+@@ -150,26 +216,50 @@
          "4689": "eip155",
          "4918": "canonical",
          "4919": "canonical",
@@ -2401,7 +2615,7 @@ index 3586cb7..745dae5 100644
          "9728": "eip155",
          "10000": "eip155",
          "10001": "eip155",
-@@ -181,8 +265,14 @@
+@@ -189,8 +279,14 @@
          "13337": "canonical",
          "13371": "eip155",
          "13473": "eip155",
@@ -2418,12 +2632,19 @@ index 3586cb7..745dae5 100644
          "17172": "eip155",
          "18231": "canonical",
          "18233": "canonical",
-@@ -190,13 +280,25 @@
-         "23294": "eip155",
+@@ -199,49 +295,91 @@
          "23295": "eip155",
          "28979": "canonical",
+         "33401": "canonical",
 -        "34443": ["canonical", "eip155"],
 +        "34443": [
++            "canonical",
++            "eip155"
++        ],
+         "35441": "canonical",
+         "35443": "canonical",
+-        "41455": ["canonical", "eip155"],
++        "41455": [
 +            "canonical",
 +            "eip155"
 +        ],
@@ -2448,17 +2669,31 @@ index 3586cb7..745dae5 100644
          "43288": "eip155",
          "44787": "canonical",
          "45000": "canonical",
-@@ -208,25 +310,46 @@
+         "47763": "canonical",
+         "47805": "canonical",
+         "48899": "eip155",
+-        "48900": ["canonical", "eip155"],
++        "48900": [
++            "canonical",
++            "eip155"
++        ],
+         "53457": "canonical",
+         "54211": "eip155",
          "56288": "eip155",
          "57000": "eip155",
          "58008": "canonical",
 -        "59140": ["canonical", "eip155"],
 -        "59144": ["canonical", "eip155"],
+-        "60808": ["canonical", "eip155"],
 +        "59140": [
 +            "canonical",
 +            "eip155"
 +        ],
 +        "59144": [
++            "canonical",
++            "eip155"
++        ],
++        "60808": [
 +            "canonical",
 +            "eip155"
 +        ],
@@ -2481,6 +2716,7 @@ index 3586cb7..745dae5 100644
 +            "eip155",
 +            "canonical"
 +        ],
+         "97435": "canonical",
          "103454": "eip155",
          "111188": "canonical",
 -        "128123": ["eip155", "canonical"],
@@ -2502,7 +2738,7 @@ index 3586cb7..745dae5 100644
          "200101": "canonical",
          "200202": "canonical",
          "200810": "canonical",
-@@ -234,43 +357,85 @@
+@@ -250,28 +388,58 @@
          "421611": "canonical",
          "421613": "canonical",
          "421614": "canonical",
@@ -2532,6 +2768,7 @@ index 3586cb7..745dae5 100644
 +            "canonical"
 +        ],
          "764984": "canonical",
+         "808813": "eip155",
          "810180": "zksync",
          "978657": "canonical",
 -        "6038361": ["eip155", "canonical"],
@@ -2570,16 +2807,18 @@ index 3586cb7..745dae5 100644
          "161221135": "canonical",
          "168587773": "canonical",
          "222000222": "canonical",
-         "245022926": "eip155",
-         "245022934": "eip155",
+@@ -280,10 +448,19 @@
+         "328527624": "canonical",
          "333000333": "canonical",
+         "476462898": "canonical",
 -        "666666666": ["canonical", "eip155"],
--        "999999999": ["canonical", "eip155"],
--        "1313161554": ["canonical", "eip155"],
 +        "666666666": [
 +            "canonical",
 +            "eip155"
 +        ],
+         "888888888": "canonical",
+-        "999999999": ["canonical", "eip155"],
+-        "1313161554": ["canonical", "eip155"],
 +        "999999999": [
 +            "canonical",
 +            "eip155"
@@ -2589,8 +2828,9 @@ index 3586cb7..745dae5 100644
 +            "eip155"
 +        ],
          "1313161555": "canonical",
+         "1511670449": "canonical",
          "1666600000": "eip155",
-         "1666700000": "eip155",
+@@ -291,7 +468,10 @@
          "11297108099": "canonical",
          "11297108109": "canonical",
          "37714555429": "canonical",
@@ -2602,11 +2842,11 @@ index 3586cb7..745dae5 100644
      },
      "abi": [
          {
-diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/proxy_factory.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/proxy_factory.json
-index 2affdfe..f54b97d 100644
---- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/proxy_factory.json
-+++ b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/proxy_factory.json
-@@ -17,15 +17,24 @@
+diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/proxy_factory.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/proxy_factory.json
+index d46c162..0d28719 100644
+--- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/proxy_factory.json
++++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/proxy_factory.json
+@@ -17,18 +17,27 @@
          }
      },
      "networkAddresses": {
@@ -2625,9 +2865,12 @@ index 2affdfe..f54b97d 100644
 +        ],
          "11": "canonical",
          "12": "canonical",
+         "14": "canonical",
+         "16": "eip155",
 -        "18": "eip155",
--        "25": ["eip155", "canonical"],
 +        "5115": "eip155",
+         "19": "eip155",
+-        "25": ["eip155", "canonical"],
 +        "25": [
 +            "eip155",
 +            "canonical"
@@ -2635,7 +2878,7 @@ index 2affdfe..f54b97d 100644
          "28": "eip155",
          "30": "canonical",
          "31": "canonical",
-@@ -33,12 +42,24 @@
+@@ -36,12 +45,24 @@
          "40": "canonical",
          "41": "canonical",
          "42": "canonical",
@@ -2664,7 +2907,7 @@ index 2affdfe..f54b97d 100644
          "57": "eip155",
          "61": "eip155",
          "63": "eip155",
-@@ -46,9 +67,15 @@
+@@ -49,9 +70,15 @@
          "71": "canonical",
          "81": "eip155",
          "82": "eip155",
@@ -2682,7 +2925,7 @@ index 2affdfe..f54b97d 100644
          "106": "eip155",
          "108": "eip155",
          "109": "eip155",
-@@ -61,11 +88,23 @@
+@@ -65,11 +92,23 @@
          "169": "canonical",
          "179": "eip155",
          "195": "eip155",
@@ -2709,8 +2952,8 @@ index 2affdfe..f54b97d 100644
 +        ],
          "255": "eip155",
          "280": "zksync",
-         "288": "eip155",
-@@ -74,7 +113,10 @@
+         "282": "zksync",
+@@ -79,7 +118,10 @@
          "321": "canonical",
          "322": "canonical",
          "324": "zksync",
@@ -2721,10 +2964,16 @@ index 2affdfe..f54b97d 100644
 +        ],
          "338": "eip155",
          "369": "canonical",
-         "420": "eip155",
-@@ -86,20 +128,32 @@
+         "388": "zksync",
+@@ -91,22 +133,37 @@
+         "592": "canonical",
          "595": "eip155",
          "599": "eip155",
+-        "648": ["canonical", "eip155"],
++        "648": [
++            "canonical",
++            "eip155"
++        ],
          "686": "eip155",
 -        "690": ["eip155", "canonical"],
 +        "690": [
@@ -2759,12 +3008,17 @@ index 2affdfe..f54b97d 100644
          "1230": "eip155",
          "1231": "eip155",
          "1284": "canonical",
-@@ -124,8 +178,14 @@
+@@ -131,9 +188,18 @@
          "2020": "canonical",
          "2021": "canonical",
          "2039": "canonical",
+-        "2192": ["canonical", "eip155"],
 -        "2221": ["canonical", "eip155"],
 -        "2222": ["canonical", "eip155"],
++        "2192": [
++            "canonical",
++            "eip155"
++        ],
 +        "2221": [
 +            "canonical",
 +            "eip155"
@@ -2776,7 +3030,7 @@ index 2affdfe..f54b97d 100644
          "2331": "canonical",
          "2358": "eip155",
          "2810": "eip155",
-@@ -142,26 +202,50 @@
+@@ -150,26 +216,50 @@
          "4689": "eip155",
          "4918": "canonical",
          "4919": "canonical",
@@ -2835,7 +3089,7 @@ index 2affdfe..f54b97d 100644
          "9728": "eip155",
          "10000": "eip155",
          "10001": "eip155",
-@@ -181,8 +265,14 @@
+@@ -189,8 +279,14 @@
          "13337": "canonical",
          "13371": "eip155",
          "13473": "eip155",
@@ -2852,12 +3106,19 @@ index 2affdfe..f54b97d 100644
          "17172": "eip155",
          "18231": "canonical",
          "18233": "canonical",
-@@ -190,13 +280,25 @@
-         "23294": "eip155",
+@@ -199,49 +295,91 @@
          "23295": "eip155",
          "28979": "canonical",
+         "33401": "canonical",
 -        "34443": ["canonical", "eip155"],
 +        "34443": [
++            "canonical",
++            "eip155"
++        ],
+         "35441": "canonical",
+         "35443": "canonical",
+-        "41455": ["canonical", "eip155"],
++        "41455": [
 +            "canonical",
 +            "eip155"
 +        ],
@@ -2882,17 +3143,31 @@ index 2affdfe..f54b97d 100644
          "43288": "eip155",
          "44787": "canonical",
          "45000": "canonical",
-@@ -208,25 +310,46 @@
+         "47763": "canonical",
+         "47805": "canonical",
+         "48899": "eip155",
+-        "48900": ["canonical", "eip155"],
++        "48900": [
++            "canonical",
++            "eip155"
++        ],
+         "53457": "canonical",
+         "54211": "eip155",
          "56288": "eip155",
          "57000": "eip155",
          "58008": "canonical",
 -        "59140": ["canonical", "eip155"],
 -        "59144": ["canonical", "eip155"],
+-        "60808": ["canonical", "eip155"],
 +        "59140": [
 +            "canonical",
 +            "eip155"
 +        ],
 +        "59144": [
++            "canonical",
++            "eip155"
++        ],
++        "60808": [
 +            "canonical",
 +            "eip155"
 +        ],
@@ -2915,6 +3190,7 @@ index 2affdfe..f54b97d 100644
 +            "eip155",
 +            "canonical"
 +        ],
+         "97435": "canonical",
          "103454": "eip155",
          "111188": "canonical",
 -        "128123": ["eip155", "canonical"],
@@ -2936,7 +3212,7 @@ index 2affdfe..f54b97d 100644
          "200101": "canonical",
          "200202": "canonical",
          "200810": "canonical",
-@@ -234,43 +357,85 @@
+@@ -250,28 +388,58 @@
          "421611": "canonical",
          "421613": "canonical",
          "421614": "canonical",
@@ -2966,6 +3242,7 @@ index 2affdfe..f54b97d 100644
 +            "canonical"
 +        ],
          "764984": "canonical",
+         "808813": "eip155",
          "810180": "zksync",
          "978657": "canonical",
 -        "6038361": ["eip155", "canonical"],
@@ -3004,16 +3281,18 @@ index 2affdfe..f54b97d 100644
          "161221135": "canonical",
          "168587773": "canonical",
          "222000222": "canonical",
-         "245022926": "eip155",
-         "245022934": "eip155",
+@@ -280,10 +448,19 @@
+         "328527624": "canonical",
          "333000333": "canonical",
+         "476462898": "canonical",
 -        "666666666": ["canonical", "eip155"],
--        "999999999": ["canonical", "eip155"],
--        "1313161554": ["canonical", "eip155"],
 +        "666666666": [
 +            "canonical",
 +            "eip155"
 +        ],
+         "888888888": "canonical",
+-        "999999999": ["canonical", "eip155"],
+-        "1313161554": ["canonical", "eip155"],
 +        "999999999": [
 +            "canonical",
 +            "eip155"
@@ -3023,8 +3302,9 @@ index 2affdfe..f54b97d 100644
 +            "eip155"
 +        ],
          "1313161555": "canonical",
+         "1511670449": "canonical",
          "1666600000": "eip155",
-         "1666700000": "eip155",
+@@ -291,7 +468,10 @@
          "11297108099": "canonical",
          "11297108109": "canonical",
          "37714555429": "canonical",
@@ -3036,11 +3316,11 @@ index 2affdfe..f54b97d 100644
      },
      "abi": [
          {
-diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/sign_message_lib.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/sign_message_lib.json
-index e9745a9..aad17dc 100644
---- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/sign_message_lib.json
-+++ b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/sign_message_lib.json
-@@ -17,15 +17,24 @@
+diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/sign_message_lib.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/sign_message_lib.json
+index 7278cc1..9a9b55f 100644
+--- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/sign_message_lib.json
++++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/sign_message_lib.json
+@@ -17,18 +17,27 @@
          }
      },
      "networkAddresses": {
@@ -3059,9 +3339,12 @@ index e9745a9..aad17dc 100644
 +        ],
          "11": "canonical",
          "12": "canonical",
+         "14": "canonical",
+         "16": "eip155",
 -        "18": "eip155",
--        "25": ["eip155", "canonical"],
 +        "5115": "eip155",
+         "19": "eip155",
+-        "25": ["eip155", "canonical"],
 +        "25": [
 +            "eip155",
 +            "canonical"
@@ -3069,7 +3352,7 @@ index e9745a9..aad17dc 100644
          "28": "eip155",
          "30": "canonical",
          "31": "canonical",
-@@ -33,12 +42,24 @@
+@@ -36,12 +45,24 @@
          "40": "canonical",
          "41": "canonical",
          "42": "canonical",
@@ -3098,7 +3381,7 @@ index e9745a9..aad17dc 100644
          "57": "eip155",
          "61": "eip155",
          "63": "eip155",
-@@ -46,9 +67,15 @@
+@@ -49,9 +70,15 @@
          "71": "canonical",
          "81": "eip155",
          "82": "eip155",
@@ -3116,7 +3399,7 @@ index e9745a9..aad17dc 100644
          "106": "eip155",
          "108": "eip155",
          "109": "eip155",
-@@ -61,11 +88,23 @@
+@@ -65,11 +92,23 @@
          "169": "canonical",
          "179": "eip155",
          "195": "eip155",
@@ -3143,8 +3426,8 @@ index e9745a9..aad17dc 100644
 +        ],
          "255": "eip155",
          "280": "zksync",
-         "288": "eip155",
-@@ -74,7 +113,10 @@
+         "282": "zksync",
+@@ -79,7 +118,10 @@
          "321": "canonical",
          "322": "canonical",
          "324": "zksync",
@@ -3155,10 +3438,16 @@ index e9745a9..aad17dc 100644
 +        ],
          "338": "eip155",
          "369": "canonical",
-         "420": "eip155",
-@@ -86,20 +128,32 @@
+         "388": "zksync",
+@@ -91,22 +133,37 @@
+         "592": "canonical",
          "595": "eip155",
          "599": "eip155",
+-        "648": ["canonical", "eip155"],
++        "648": [
++            "canonical",
++            "eip155"
++        ],
          "686": "eip155",
 -        "690": ["eip155", "canonical"],
 +        "690": [
@@ -3193,12 +3482,17 @@ index e9745a9..aad17dc 100644
          "1230": "eip155",
          "1231": "eip155",
          "1284": "canonical",
-@@ -124,8 +178,14 @@
+@@ -131,9 +188,18 @@
          "2020": "canonical",
          "2021": "canonical",
          "2039": "canonical",
+-        "2192": ["canonical", "eip155"],
 -        "2221": ["canonical", "eip155"],
 -        "2222": ["canonical", "eip155"],
++        "2192": [
++            "canonical",
++            "eip155"
++        ],
 +        "2221": [
 +            "canonical",
 +            "eip155"
@@ -3210,7 +3504,7 @@ index e9745a9..aad17dc 100644
          "2331": "canonical",
          "2358": "eip155",
          "2810": "eip155",
-@@ -142,26 +202,50 @@
+@@ -150,26 +216,50 @@
          "4689": "eip155",
          "4918": "canonical",
          "4919": "canonical",
@@ -3269,7 +3563,7 @@ index e9745a9..aad17dc 100644
          "9728": "eip155",
          "10000": "eip155",
          "10001": "eip155",
-@@ -181,8 +265,14 @@
+@@ -189,8 +279,14 @@
          "13337": "canonical",
          "13371": "eip155",
          "13473": "eip155",
@@ -3286,12 +3580,19 @@ index e9745a9..aad17dc 100644
          "17172": "eip155",
          "18231": "canonical",
          "18233": "canonical",
-@@ -190,13 +280,25 @@
-         "23294": "eip155",
+@@ -199,49 +295,91 @@
          "23295": "eip155",
          "28979": "canonical",
+         "33401": "canonical",
 -        "34443": ["canonical", "eip155"],
 +        "34443": [
++            "canonical",
++            "eip155"
++        ],
+         "35441": "canonical",
+         "35443": "canonical",
+-        "41455": ["canonical", "eip155"],
++        "41455": [
 +            "canonical",
 +            "eip155"
 +        ],
@@ -3316,17 +3617,31 @@ index e9745a9..aad17dc 100644
          "43288": "eip155",
          "44787": "canonical",
          "45000": "canonical",
-@@ -208,25 +310,46 @@
+         "47763": "canonical",
+         "47805": "canonical",
+         "48899": "eip155",
+-        "48900": ["canonical", "eip155"],
++        "48900": [
++            "canonical",
++            "eip155"
++        ],
+         "53457": "canonical",
+         "54211": "eip155",
          "56288": "eip155",
          "57000": "eip155",
          "58008": "canonical",
 -        "59140": ["canonical", "eip155"],
 -        "59144": ["canonical", "eip155"],
+-        "60808": ["canonical", "eip155"],
 +        "59140": [
 +            "canonical",
 +            "eip155"
 +        ],
 +        "59144": [
++            "canonical",
++            "eip155"
++        ],
++        "60808": [
 +            "canonical",
 +            "eip155"
 +        ],
@@ -3349,6 +3664,7 @@ index e9745a9..aad17dc 100644
 +            "eip155",
 +            "canonical"
 +        ],
+         "97435": "canonical",
          "103454": "eip155",
          "111188": "canonical",
 -        "128123": ["eip155", "canonical"],
@@ -3370,7 +3686,7 @@ index e9745a9..aad17dc 100644
          "200101": "canonical",
          "200202": "canonical",
          "200810": "canonical",
-@@ -234,43 +357,85 @@
+@@ -250,28 +388,58 @@
          "421611": "canonical",
          "421613": "canonical",
          "421614": "canonical",
@@ -3400,6 +3716,7 @@ index e9745a9..aad17dc 100644
 +            "canonical"
 +        ],
          "764984": "canonical",
+         "808813": "eip155",
          "810180": "zksync",
          "978657": "canonical",
 -        "6038361": ["eip155", "canonical"],
@@ -3438,16 +3755,18 @@ index e9745a9..aad17dc 100644
          "161221135": "canonical",
          "168587773": "canonical",
          "222000222": "canonical",
-         "245022926": "eip155",
-         "245022934": "eip155",
+@@ -280,10 +448,19 @@
+         "328527624": "canonical",
          "333000333": "canonical",
+         "476462898": "canonical",
 -        "666666666": ["canonical", "eip155"],
--        "999999999": ["canonical", "eip155"],
--        "1313161554": ["canonical", "eip155"],
 +        "666666666": [
 +            "canonical",
 +            "eip155"
 +        ],
+         "888888888": "canonical",
+-        "999999999": ["canonical", "eip155"],
+-        "1313161554": ["canonical", "eip155"],
 +        "999999999": [
 +            "canonical",
 +            "eip155"
@@ -3457,8 +3776,9 @@ index e9745a9..aad17dc 100644
 +            "eip155"
 +        ],
          "1313161555": "canonical",
+         "1511670449": "canonical",
          "1666600000": "eip155",
-         "1666700000": "eip155",
+@@ -291,7 +468,10 @@
          "11297108099": "canonical",
          "11297108109": "canonical",
          "37714555429": "canonical",
@@ -3470,11 +3790,11 @@ index e9745a9..aad17dc 100644
      },
      "abi": [
          {
-diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/simulate_tx_accessor.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/simulate_tx_accessor.json
-index 58b5696..0489938 100644
---- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/simulate_tx_accessor.json
-+++ b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/simulate_tx_accessor.json
-@@ -17,15 +17,24 @@
+diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/simulate_tx_accessor.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/simulate_tx_accessor.json
+index c272e70..e457f44 100644
+--- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/simulate_tx_accessor.json
++++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/simulate_tx_accessor.json
+@@ -17,18 +17,27 @@
          }
      },
      "networkAddresses": {
@@ -3493,9 +3813,12 @@ index 58b5696..0489938 100644
 +        ],
          "11": "canonical",
          "12": "canonical",
+         "14": "canonical",
+         "16": "eip155",
 -        "18": "eip155",
--        "25": ["eip155", "canonical"],
 +        "5115": "eip155",
+         "19": "eip155",
+-        "25": ["eip155", "canonical"],
 +        "25": [
 +            "eip155",
 +            "canonical"
@@ -3503,7 +3826,7 @@ index 58b5696..0489938 100644
          "28": "eip155",
          "30": "canonical",
          "31": "canonical",
-@@ -33,12 +42,24 @@
+@@ -36,12 +45,24 @@
          "40": "canonical",
          "41": "canonical",
          "42": "canonical",
@@ -3532,7 +3855,7 @@ index 58b5696..0489938 100644
          "57": "eip155",
          "61": "eip155",
          "63": "eip155",
-@@ -46,9 +67,15 @@
+@@ -49,9 +70,15 @@
          "71": "canonical",
          "81": "eip155",
          "82": "eip155",
@@ -3550,7 +3873,7 @@ index 58b5696..0489938 100644
          "106": "eip155",
          "108": "eip155",
          "109": "eip155",
-@@ -61,11 +88,23 @@
+@@ -65,11 +92,23 @@
          "169": "canonical",
          "179": "eip155",
          "195": "eip155",
@@ -3577,8 +3900,8 @@ index 58b5696..0489938 100644
 +        ],
          "255": "eip155",
          "280": "zksync",
-         "288": "eip155",
-@@ -74,7 +113,10 @@
+         "282": "zksync",
+@@ -79,7 +118,10 @@
          "321": "canonical",
          "322": "canonical",
          "324": "zksync",
@@ -3589,10 +3912,16 @@ index 58b5696..0489938 100644
 +        ],
          "338": "eip155",
          "369": "canonical",
-         "420": "eip155",
-@@ -86,20 +128,32 @@
+         "388": "zksync",
+@@ -91,22 +133,37 @@
+         "592": "canonical",
          "595": "eip155",
          "599": "eip155",
+-        "648": ["canonical", "eip155"],
++        "648": [
++            "canonical",
++            "eip155"
++        ],
          "686": "eip155",
 -        "690": ["eip155", "canonical"],
 +        "690": [
@@ -3627,12 +3956,17 @@ index 58b5696..0489938 100644
          "1230": "eip155",
          "1231": "eip155",
          "1284": "canonical",
-@@ -124,8 +178,14 @@
+@@ -131,9 +188,18 @@
          "2020": "canonical",
          "2021": "canonical",
          "2039": "canonical",
+-        "2192": ["canonical", "eip155"],
 -        "2221": ["canonical", "eip155"],
 -        "2222": ["canonical", "eip155"],
++        "2192": [
++            "canonical",
++            "eip155"
++        ],
 +        "2221": [
 +            "canonical",
 +            "eip155"
@@ -3644,7 +3978,7 @@ index 58b5696..0489938 100644
          "2331": "canonical",
          "2358": "eip155",
          "2810": "eip155",
-@@ -142,26 +202,50 @@
+@@ -150,26 +216,50 @@
          "4689": "eip155",
          "4918": "canonical",
          "4919": "canonical",
@@ -3703,7 +4037,7 @@ index 58b5696..0489938 100644
          "9728": "eip155",
          "10000": "eip155",
          "10001": "eip155",
-@@ -181,8 +265,14 @@
+@@ -189,8 +279,14 @@
          "13337": "canonical",
          "13371": "eip155",
          "13473": "eip155",
@@ -3720,12 +4054,19 @@ index 58b5696..0489938 100644
          "17172": "eip155",
          "18231": "canonical",
          "18233": "canonical",
-@@ -190,13 +280,25 @@
-         "23294": "eip155",
+@@ -199,49 +295,91 @@
          "23295": "eip155",
          "28979": "canonical",
+         "33401": "canonical",
 -        "34443": ["canonical", "eip155"],
 +        "34443": [
++            "canonical",
++            "eip155"
++        ],
+         "35441": "canonical",
+         "35443": "canonical",
+-        "41455": ["canonical", "eip155"],
++        "41455": [
 +            "canonical",
 +            "eip155"
 +        ],
@@ -3750,17 +4091,31 @@ index 58b5696..0489938 100644
          "43288": "eip155",
          "44787": "canonical",
          "45000": "canonical",
-@@ -208,25 +310,46 @@
+         "47763": "canonical",
+         "47805": "canonical",
+         "48899": "eip155",
+-        "48900": ["canonical", "eip155"],
++        "48900": [
++            "canonical",
++            "eip155"
++        ],
+         "53457": "canonical",
+         "54211": "eip155",
          "56288": "eip155",
          "57000": "eip155",
          "58008": "canonical",
 -        "59140": ["canonical", "eip155"],
 -        "59144": ["canonical", "eip155"],
+-        "60808": ["canonical", "eip155"],
 +        "59140": [
 +            "canonical",
 +            "eip155"
 +        ],
 +        "59144": [
++            "canonical",
++            "eip155"
++        ],
++        "60808": [
 +            "canonical",
 +            "eip155"
 +        ],
@@ -3783,6 +4138,7 @@ index 58b5696..0489938 100644
 +            "eip155",
 +            "canonical"
 +        ],
+         "97435": "canonical",
          "103454": "eip155",
          "111188": "canonical",
 -        "128123": ["eip155", "canonical"],
@@ -3804,7 +4160,7 @@ index 58b5696..0489938 100644
          "200101": "canonical",
          "200202": "canonical",
          "200810": "canonical",
-@@ -234,43 +357,85 @@
+@@ -250,28 +388,58 @@
          "421611": "canonical",
          "421613": "canonical",
          "421614": "canonical",
@@ -3834,6 +4190,7 @@ index 58b5696..0489938 100644
 +            "canonical"
 +        ],
          "764984": "canonical",
+         "808813": "eip155",
          "810180": "zksync",
          "978657": "canonical",
 -        "6038361": ["eip155", "canonical"],
@@ -3872,16 +4229,18 @@ index 58b5696..0489938 100644
          "161221135": "canonical",
          "168587773": "canonical",
          "222000222": "canonical",
-         "245022926": "eip155",
-         "245022934": "eip155",
+@@ -280,10 +448,19 @@
+         "328527624": "canonical",
          "333000333": "canonical",
+         "476462898": "canonical",
 -        "666666666": ["canonical", "eip155"],
--        "999999999": ["canonical", "eip155"],
--        "1313161554": ["canonical", "eip155"],
 +        "666666666": [
 +            "canonical",
 +            "eip155"
 +        ],
+         "888888888": "canonical",
+-        "999999999": ["canonical", "eip155"],
+-        "1313161554": ["canonical", "eip155"],
 +        "999999999": [
 +            "canonical",
 +            "eip155"
@@ -3891,8 +4250,9 @@ index 58b5696..0489938 100644
 +            "eip155"
 +        ],
          "1313161555": "canonical",
+         "1511670449": "canonical",
          "1666600000": "eip155",
-         "1666700000": "eip155",
+@@ -291,7 +468,10 @@
          "11297108099": "canonical",
          "11297108109": "canonical",
          "37714555429": "canonical",
@@ -3904,128 +4264,11 @@ index 58b5696..0489938 100644
      },
      "abi": [
          {
-diff --git a/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/compatibility_fallback_handler.json b/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/compatibility_fallback_handler.json
-index 6e8ad63..069375f 100644
---- a/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/compatibility_fallback_handler.json
-+++ b/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/compatibility_fallback_handler.json
-@@ -25,7 +25,7 @@
-     "10": "0x017062a1dE2FE6b99BE3d9d37841FeD19F573804",
-     "11": "0xf48f2B2d2a534e402487b3ee7C18c33Aec0Fe5e4",
-     "12": "0xf48f2B2d2a534e402487b3ee7C18c33Aec0Fe5e4",
--    "18": "0x017062a1dE2FE6b99BE3d9d37841FeD19F573804",
-+    "5115": "0x017062a1dE2FE6b99BE3d9d37841FeD19F573804",
-     "25": "0x017062a1dE2FE6b99BE3d9d37841FeD19F573804",
-     "28": "0x017062a1dE2FE6b99BE3d9d37841FeD19F573804",
-     "30": "0xf48f2B2d2a534e402487b3ee7C18c33Aec0Fe5e4",
-diff --git a/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/create_call.json b/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/create_call.json
-index 3b112a8..90646b6 100644
---- a/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/create_call.json
-+++ b/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/create_call.json
-@@ -25,7 +25,7 @@
-     "10": "0xB19D6FFc2182150F8Eb585b79D4ABcd7C5640A9d",
-     "11": "0x7cbB62EaA69F79e6873cD1ecB2392971036cFAa4",
-     "12": "0x7cbB62EaA69F79e6873cD1ecB2392971036cFAa4",
--    "18": "0xB19D6FFc2182150F8Eb585b79D4ABcd7C5640A9d",
-+    "5115": "0xB19D6FFc2182150F8Eb585b79D4ABcd7C5640A9d",
-     "25": "0xB19D6FFc2182150F8Eb585b79D4ABcd7C5640A9d",
-     "28": "0xB19D6FFc2182150F8Eb585b79D4ABcd7C5640A9d",
-     "30": "0x7cbB62EaA69F79e6873cD1ecB2392971036cFAa4",
-diff --git a/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/gnosis_safe.json b/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/gnosis_safe.json
-index ebc6a7c..54519e6 100644
---- a/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/gnosis_safe.json
-+++ b/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/gnosis_safe.json
-@@ -25,7 +25,7 @@
-     "10": "0x69f4D1788e39c87893C980c06EdF4b7f686e2938",
-     "11": "0xd9Db270c1B5E3Bd161E8c8503c55cEABeE709552",
-     "12": "0xd9Db270c1B5E3Bd161E8c8503c55cEABeE709552",
--    "18": "0x69f4D1788e39c87893C980c06EdF4b7f686e2938",
-+    "5115": "0x69f4D1788e39c87893C980c06EdF4b7f686e2938",
-     "25": "0x69f4D1788e39c87893C980c06EdF4b7f686e2938",
-     "28": "0x69f4D1788e39c87893C980c06EdF4b7f686e2938",
-     "30": "0xd9Db270c1B5E3Bd161E8c8503c55cEABeE709552",
-diff --git a/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/gnosis_safe_l2.json b/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/gnosis_safe_l2.json
-index b8bdef3..563a0d4 100644
---- a/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/gnosis_safe_l2.json
-+++ b/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/gnosis_safe_l2.json
-@@ -25,7 +25,7 @@
-     "10": "0xfb1bffC9d739B8D520DaF37dF666da4C687191EA",
-     "11": "0x3E5c63644E683549055b9Be8653de26E0B4CD36E",
-     "12": "0x3E5c63644E683549055b9Be8653de26E0B4CD36E",
--    "18": "0xfb1bffC9d739B8D520DaF37dF666da4C687191EA",
-+    "5115": "0xfb1bffC9d739B8D520DaF37dF666da4C687191EA",
-     "25": "0xfb1bffC9d739B8D520DaF37dF666da4C687191EA",
-     "28": "0xfb1bffC9d739B8D520DaF37dF666da4C687191EA",
-     "30": "0x3E5c63644E683549055b9Be8653de26E0B4CD36E",
-diff --git a/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/multi_send.json b/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/multi_send.json
-index ef7e47d..3ef39f2 100644
---- a/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/multi_send.json
-+++ b/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/multi_send.json
-@@ -25,7 +25,7 @@
-     "10": "0x998739BFdAAdde7C933B942a68053933098f9EDa",
-     "11": "0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761",
-     "12": "0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761",
--    "18": "0x998739BFdAAdde7C933B942a68053933098f9EDa",
-+    "5115": "0x998739BFdAAdde7C933B942a68053933098f9EDa",
-     "25": "0x998739BFdAAdde7C933B942a68053933098f9EDa",
-     "28": "0x998739BFdAAdde7C933B942a68053933098f9EDa",
-     "30": "0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761",
-diff --git a/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/multi_send_call_only.json b/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/multi_send_call_only.json
-index 9d9d38b..e9a1dcd 100644
---- a/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/multi_send_call_only.json
-+++ b/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/multi_send_call_only.json
-@@ -25,7 +25,7 @@
-     "10": "0xA1dabEF33b3B82c7814B6D82A79e50F4AC44102B",
-     "11": "0x40A2aCCbd92BCA938b02010E17A5b8929b49130D",
-     "12": "0x40A2aCCbd92BCA938b02010E17A5b8929b49130D",
--    "18": "0xA1dabEF33b3B82c7814B6D82A79e50F4AC44102B",
-+    "5115": "0xA1dabEF33b3B82c7814B6D82A79e50F4AC44102B",
-     "25": "0xA1dabEF33b3B82c7814B6D82A79e50F4AC44102B",
-     "28": "0xA1dabEF33b3B82c7814B6D82A79e50F4AC44102B",
-     "30": "0x40A2aCCbd92BCA938b02010E17A5b8929b49130D",
-diff --git a/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/proxy_factory.json b/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/proxy_factory.json
-index 1f700b5..6204ced 100644
---- a/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/proxy_factory.json
-+++ b/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/proxy_factory.json
-@@ -25,7 +25,7 @@
-     "10": "0xC22834581EbC8527d974F8a1c97E1bEA4EF910BC",
-     "11": "0xa6B71E26C5e0845f74c812102Ca7114b6a896AB2",
-     "12": "0xa6B71E26C5e0845f74c812102Ca7114b6a896AB2",
--    "18": "0xC22834581EbC8527d974F8a1c97E1bEA4EF910BC",
-+    "5115": "0xC22834581EbC8527d974F8a1c97E1bEA4EF910BC",
-     "25": "0xC22834581EbC8527d974F8a1c97E1bEA4EF910BC",
-     "28": "0xC22834581EbC8527d974F8a1c97E1bEA4EF910BC",
-     "30": "0xa6B71E26C5e0845f74c812102Ca7114b6a896AB2",
-diff --git a/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/sign_message_lib.json b/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/sign_message_lib.json
-index 1863d73..949eb0a 100644
---- a/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/sign_message_lib.json
-+++ b/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/sign_message_lib.json
-@@ -25,7 +25,7 @@
-     "10": "0x98FFBBF51bb33A056B08ddf711f289936AafF717",
-     "11": "0xA65387F16B013cf2Af4605Ad8aA5ec25a2cbA3a2",
-     "12": "0xA65387F16B013cf2Af4605Ad8aA5ec25a2cbA3a2",
--    "18": "0x98FFBBF51bb33A056B08ddf711f289936AafF717",
-+    "5115": "0x98FFBBF51bb33A056B08ddf711f289936AafF717",
-     "25": "0x98FFBBF51bb33A056B08ddf711f289936AafF717",
-     "28": "0x98FFBBF51bb33A056B08ddf711f289936AafF717",
-     "30": "0xA65387F16B013cf2Af4605Ad8aA5ec25a2cbA3a2",
-diff --git a/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/simulate_tx_accessor.json b/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/simulate_tx_accessor.json
-index 84cae10..195dc22 100644
---- a/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/simulate_tx_accessor.json
-+++ b/node_modules/@safe-global/safe-deployments/src/__tests__/assets/v1/v1.3.0/simulate_tx_accessor.json
-@@ -25,7 +25,7 @@
-     "10": "0x727a77a074D1E6c4530e814F89E618a3298FC044",
-     "11": "0x59AD6735bCd8152B84860Cb256dD9e96b85F69Da",
-     "12": "0x59AD6735bCd8152B84860Cb256dD9e96b85F69Da",
--    "18": "0x727a77a074D1E6c4530e814F89E618a3298FC044",
-+    "5115": "0x727a77a074D1E6c4530e814F89E618a3298FC044",
-     "25": "0x727a77a074D1E6c4530e814F89E618a3298FC044",
-     "28": "0x727a77a074D1E6c4530e814F89E618a3298FC044",
-     "30": "0x59AD6735bCd8152B84860Cb256dD9e96b85F69Da",
-diff --git a/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/compatibility_fallback_handler.json b/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/compatibility_fallback_handler.json
-index 5111492..f3c897b 100644
---- a/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/compatibility_fallback_handler.json
-+++ b/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/compatibility_fallback_handler.json
-@@ -17,15 +17,24 @@
+diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/compatibility_fallback_handler.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/compatibility_fallback_handler.json
+index d01b905..d14c824 100644
+--- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/compatibility_fallback_handler.json
++++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/compatibility_fallback_handler.json
+@@ -17,18 +17,27 @@
      }
    },
    "networkAddresses": {
@@ -4044,9 +4287,12 @@ index 5111492..f3c897b 100644
 +    ],
      "11": "canonical",
      "12": "canonical",
+     "14": "canonical",
+     "16": "eip155",
 -    "18": "eip155",
--    "25": ["eip155", "canonical"],
 +    "5115": "eip155",
+     "19": "eip155",
+-    "25": ["eip155", "canonical"],
 +    "25": [
 +      "eip155",
 +      "canonical"
@@ -4054,7 +4300,7 @@ index 5111492..f3c897b 100644
      "28": "eip155",
      "30": "canonical",
      "31": "canonical",
-@@ -33,12 +42,24 @@
+@@ -36,12 +45,24 @@
      "40": "canonical",
      "41": "canonical",
      "42": "canonical",
@@ -4083,7 +4329,7 @@ index 5111492..f3c897b 100644
      "57": "eip155",
      "61": "eip155",
      "63": "eip155",
-@@ -46,9 +67,15 @@
+@@ -49,9 +70,15 @@
      "71": "canonical",
      "81": "eip155",
      "82": "eip155",
@@ -4101,7 +4347,7 @@ index 5111492..f3c897b 100644
      "106": "eip155",
      "108": "eip155",
      "109": "eip155",
-@@ -61,11 +88,23 @@
+@@ -65,11 +92,23 @@
      "169": "canonical",
      "179": "eip155",
      "195": "eip155",
@@ -4128,8 +4374,8 @@ index 5111492..f3c897b 100644
 +    ],
      "255": "eip155",
      "280": "zksync",
-     "288": "eip155",
-@@ -74,7 +113,10 @@
+     "282": "zksync",
+@@ -79,7 +118,10 @@
      "321": "canonical",
      "322": "canonical",
      "324": "zksync",
@@ -4140,10 +4386,16 @@ index 5111492..f3c897b 100644
 +    ],
      "338": "eip155",
      "369": "canonical",
-     "420": "eip155",
-@@ -86,20 +128,32 @@
+     "388": "zksync",
+@@ -91,22 +133,37 @@
+     "592": "canonical",
      "595": "eip155",
      "599": "eip155",
+-    "648": ["canonical", "eip155"],
++    "648": [
++      "canonical",
++      "eip155"
++    ],
      "686": "eip155",
 -    "690": ["eip155", "canonical"],
 +    "690": [
@@ -4178,12 +4430,17 @@ index 5111492..f3c897b 100644
      "1230": "eip155",
      "1231": "eip155",
      "1284": "canonical",
-@@ -124,8 +178,14 @@
+@@ -131,9 +188,18 @@
      "2020": "canonical",
      "2021": "canonical",
      "2039": "canonical",
+-    "2192": ["canonical", "eip155"],
 -    "2221": ["canonical", "eip155"],
 -    "2222": ["canonical", "eip155"],
++    "2192": [
++      "canonical",
++      "eip155"
++    ],
 +    "2221": [
 +      "canonical",
 +      "eip155"
@@ -4195,7 +4452,7 @@ index 5111492..f3c897b 100644
      "2331": "canonical",
      "2358": "eip155",
      "2810": "eip155",
-@@ -142,26 +202,50 @@
+@@ -150,26 +216,50 @@
      "4689": "eip155",
      "4918": "canonical",
      "4919": "canonical",
@@ -4254,7 +4511,7 @@ index 5111492..f3c897b 100644
      "9728": "eip155",
      "10000": "eip155",
      "10001": "eip155",
-@@ -181,8 +265,14 @@
+@@ -189,8 +279,14 @@
      "13337": "canonical",
      "13371": "eip155",
      "13473": "eip155",
@@ -4271,12 +4528,19 @@ index 5111492..f3c897b 100644
      "17172": "eip155",
      "18231": "canonical",
      "18233": "canonical",
-@@ -190,13 +280,25 @@
-     "23294": "eip155",
+@@ -199,49 +295,91 @@
      "23295": "eip155",
      "28979": "canonical",
+     "33401": "canonical",
 -    "34443": ["canonical", "eip155"],
 +    "34443": [
++      "canonical",
++      "eip155"
++    ],
+     "35441": "canonical",
+     "35443": "canonical",
+-    "41455": ["canonical", "eip155"],
++    "41455": [
 +      "canonical",
 +      "eip155"
 +    ],
@@ -4301,17 +4565,31 @@ index 5111492..f3c897b 100644
      "43288": "eip155",
      "44787": "canonical",
      "45000": "canonical",
-@@ -208,25 +310,46 @@
+     "47763": "canonical",
+     "47805": "canonical",
+     "48899": "eip155",
+-    "48900": ["canonical", "eip155"],
++    "48900": [
++      "canonical",
++      "eip155"
++    ],
+     "53457": "canonical",
+     "54211": "eip155",
      "56288": "eip155",
      "57000": "eip155",
      "58008": "canonical",
 -    "59140": ["canonical", "eip155"],
 -    "59144": ["canonical", "eip155"],
+-    "60808": ["canonical", "eip155"],
 +    "59140": [
 +      "canonical",
 +      "eip155"
 +    ],
 +    "59144": [
++      "canonical",
++      "eip155"
++    ],
++    "60808": [
 +      "canonical",
 +      "eip155"
 +    ],
@@ -4334,6 +4612,7 @@ index 5111492..f3c897b 100644
 +      "eip155",
 +      "canonical"
 +    ],
+     "97435": "canonical",
      "103454": "eip155",
      "111188": "canonical",
 -    "128123": ["eip155", "canonical"],
@@ -4355,7 +4634,7 @@ index 5111492..f3c897b 100644
      "200101": "canonical",
      "200202": "canonical",
      "200810": "canonical",
-@@ -234,43 +357,85 @@
+@@ -250,28 +388,58 @@
      "421611": "canonical",
      "421613": "canonical",
      "421614": "canonical",
@@ -4385,6 +4664,7 @@ index 5111492..f3c897b 100644
 +      "canonical"
 +    ],
      "764984": "canonical",
+     "808813": "eip155",
      "810180": "zksync",
      "978657": "canonical",
 -    "6038361": ["eip155", "canonical"],
@@ -4423,16 +4703,18 @@ index 5111492..f3c897b 100644
      "161221135": "canonical",
      "168587773": "canonical",
      "222000222": "canonical",
-     "245022926": "eip155",
-     "245022934": "eip155",
+@@ -280,10 +448,19 @@
+     "328527624": "canonical",
      "333000333": "canonical",
+     "476462898": "canonical",
 -    "666666666": ["canonical", "eip155"],
--    "999999999": ["canonical", "eip155"],
--    "1313161554": ["canonical", "eip155"],
 +    "666666666": [
 +      "canonical",
 +      "eip155"
 +    ],
+     "888888888": "canonical",
+-    "999999999": ["canonical", "eip155"],
+-    "1313161554": ["canonical", "eip155"],
 +    "999999999": [
 +      "canonical",
 +      "eip155"
@@ -4442,8 +4724,9 @@ index 5111492..f3c897b 100644
 +      "eip155"
 +    ],
      "1313161555": "canonical",
+     "1511670449": "canonical",
      "1666600000": "eip155",
-     "1666700000": "eip155",
+@@ -291,7 +468,10 @@
      "11297108099": "canonical",
      "11297108109": "canonical",
      "37714555429": "canonical",
@@ -4455,11 +4738,11 @@ index 5111492..f3c897b 100644
    },
    "abi": [
      {
-diff --git a/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/create_call.json b/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/create_call.json
-index 411405d..aae68ff 100644
---- a/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/create_call.json
-+++ b/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/create_call.json
-@@ -17,15 +17,24 @@
+diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/create_call.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/create_call.json
+index d541e43..d339e15 100644
+--- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/create_call.json
++++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/create_call.json
+@@ -17,18 +17,27 @@
      }
    },
    "networkAddresses": {
@@ -4478,9 +4761,12 @@ index 411405d..aae68ff 100644
 +    ],
      "11": "canonical",
      "12": "canonical",
+     "14": "canonical",
+     "16": "eip155",
 -    "18": "eip155",
--    "25": ["eip155", "canonical"],
 +    "5115": "eip155",
+     "19": "eip155",
+-    "25": ["eip155", "canonical"],
 +    "25": [
 +      "eip155",
 +      "canonical"
@@ -4488,7 +4774,7 @@ index 411405d..aae68ff 100644
      "28": "eip155",
      "30": "canonical",
      "31": "canonical",
-@@ -33,12 +42,24 @@
+@@ -36,12 +45,24 @@
      "40": "canonical",
      "41": "canonical",
      "42": "canonical",
@@ -4517,7 +4803,7 @@ index 411405d..aae68ff 100644
      "57": "eip155",
      "61": "eip155",
      "63": "eip155",
-@@ -46,9 +67,15 @@
+@@ -49,9 +70,15 @@
      "71": "canonical",
      "81": "eip155",
      "82": "eip155",
@@ -4535,7 +4821,7 @@ index 411405d..aae68ff 100644
      "106": "eip155",
      "108": "eip155",
      "109": "eip155",
-@@ -61,11 +88,23 @@
+@@ -65,11 +92,23 @@
      "169": "canonical",
      "179": "eip155",
      "195": "eip155",
@@ -4562,8 +4848,8 @@ index 411405d..aae68ff 100644
 +    ],
      "255": "eip155",
      "280": "zksync",
-     "288": "eip155",
-@@ -74,7 +113,10 @@
+     "282": "zksync",
+@@ -79,7 +118,10 @@
      "321": "canonical",
      "322": "canonical",
      "324": "zksync",
@@ -4574,10 +4860,16 @@ index 411405d..aae68ff 100644
 +    ],
      "338": "eip155",
      "369": "canonical",
-     "420": "eip155",
-@@ -86,20 +128,32 @@
+     "388": "zksync",
+@@ -91,22 +133,37 @@
+     "592": "canonical",
      "595": "eip155",
      "599": "eip155",
+-    "648": ["canonical", "eip155"],
++    "648": [
++      "canonical",
++      "eip155"
++    ],
      "686": "eip155",
 -    "690": ["eip155", "canonical"],
 +    "690": [
@@ -4612,12 +4904,17 @@ index 411405d..aae68ff 100644
      "1230": "eip155",
      "1231": "eip155",
      "1284": "canonical",
-@@ -124,8 +178,14 @@
+@@ -131,9 +188,18 @@
      "2020": "canonical",
      "2021": "canonical",
      "2039": "canonical",
+-    "2192": ["canonical", "eip155"],
 -    "2221": ["canonical", "eip155"],
 -    "2222": ["canonical", "eip155"],
++    "2192": [
++      "canonical",
++      "eip155"
++    ],
 +    "2221": [
 +      "canonical",
 +      "eip155"
@@ -4629,7 +4926,7 @@ index 411405d..aae68ff 100644
      "2331": "canonical",
      "2358": "eip155",
      "2810": "eip155",
-@@ -142,26 +202,50 @@
+@@ -150,26 +216,50 @@
      "4689": "eip155",
      "4918": "canonical",
      "4919": "canonical",
@@ -4688,7 +4985,7 @@ index 411405d..aae68ff 100644
      "9728": "eip155",
      "10000": "eip155",
      "10001": "eip155",
-@@ -181,8 +265,14 @@
+@@ -189,8 +279,14 @@
      "13337": "canonical",
      "13371": "eip155",
      "13473": "eip155",
@@ -4705,12 +5002,19 @@ index 411405d..aae68ff 100644
      "17172": "eip155",
      "18231": "canonical",
      "18233": "canonical",
-@@ -190,13 +280,25 @@
-     "23294": "eip155",
+@@ -199,49 +295,91 @@
      "23295": "eip155",
      "28979": "canonical",
+     "33401": "canonical",
 -    "34443": ["canonical", "eip155"],
 +    "34443": [
++      "canonical",
++      "eip155"
++    ],
+     "35441": "canonical",
+     "35443": "canonical",
+-    "41455": ["canonical", "eip155"],
++    "41455": [
 +      "canonical",
 +      "eip155"
 +    ],
@@ -4735,17 +5039,31 @@ index 411405d..aae68ff 100644
      "43288": "eip155",
      "44787": "canonical",
      "45000": "canonical",
-@@ -208,25 +310,46 @@
+     "47763": "canonical",
+     "47805": "canonical",
+     "48899": "eip155",
+-    "48900": ["canonical", "eip155"],
++    "48900": [
++      "canonical",
++      "eip155"
++    ],
+     "53457": "canonical",
+     "54211": "eip155",
      "56288": "eip155",
      "57000": "eip155",
      "58008": "canonical",
 -    "59140": ["canonical", "eip155"],
 -    "59144": ["canonical", "eip155"],
+-    "60808": ["canonical", "eip155"],
 +    "59140": [
 +      "canonical",
 +      "eip155"
 +    ],
 +    "59144": [
++      "canonical",
++      "eip155"
++    ],
++    "60808": [
 +      "canonical",
 +      "eip155"
 +    ],
@@ -4768,6 +5086,7 @@ index 411405d..aae68ff 100644
 +      "eip155",
 +      "canonical"
 +    ],
+     "97435": "canonical",
      "103454": "eip155",
      "111188": "canonical",
 -    "128123": ["eip155", "canonical"],
@@ -4789,7 +5108,7 @@ index 411405d..aae68ff 100644
      "200101": "canonical",
      "200202": "canonical",
      "200810": "canonical",
-@@ -234,43 +357,85 @@
+@@ -250,28 +388,58 @@
      "421611": "canonical",
      "421613": "canonical",
      "421614": "canonical",
@@ -4819,6 +5138,7 @@ index 411405d..aae68ff 100644
 +      "canonical"
 +    ],
      "764984": "canonical",
+     "808813": "eip155",
      "810180": "zksync",
      "978657": "canonical",
 -    "6038361": ["eip155", "canonical"],
@@ -4857,16 +5177,18 @@ index 411405d..aae68ff 100644
      "161221135": "canonical",
      "168587773": "canonical",
      "222000222": "canonical",
-     "245022926": "eip155",
-     "245022934": "eip155",
+@@ -280,10 +448,19 @@
+     "328527624": "canonical",
      "333000333": "canonical",
+     "476462898": "canonical",
 -    "666666666": ["canonical", "eip155"],
--    "999999999": ["canonical", "eip155"],
--    "1313161554": ["canonical", "eip155"],
 +    "666666666": [
 +      "canonical",
 +      "eip155"
 +    ],
+     "888888888": "canonical",
+-    "999999999": ["canonical", "eip155"],
+-    "1313161554": ["canonical", "eip155"],
 +    "999999999": [
 +      "canonical",
 +      "eip155"
@@ -4876,8 +5198,9 @@ index 411405d..aae68ff 100644
 +      "eip155"
 +    ],
      "1313161555": "canonical",
+     "1511670449": "canonical",
      "1666600000": "eip155",
-     "1666700000": "eip155",
+@@ -291,7 +468,10 @@
      "11297108099": "canonical",
      "11297108109": "canonical",
      "37714555429": "canonical",
@@ -4889,11 +5212,11 @@ index 411405d..aae68ff 100644
    },
    "abi": [
      {
-diff --git a/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/gnosis_safe.json b/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/gnosis_safe.json
-index b6d9752..90caaa2 100644
---- a/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/gnosis_safe.json
-+++ b/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/gnosis_safe.json
-@@ -17,15 +17,24 @@
+diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/gnosis_safe.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/gnosis_safe.json
+index be3d390..1dc35a0 100644
+--- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/gnosis_safe.json
++++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/gnosis_safe.json
+@@ -17,18 +17,27 @@
      }
    },
    "networkAddresses": {
@@ -4912,9 +5235,12 @@ index b6d9752..90caaa2 100644
 +    ],
      "11": "canonical",
      "12": "canonical",
+     "14": "canonical",
+     "16": "eip155",
 -    "18": "eip155",
--    "25": ["eip155", "canonical"],
 +    "5115": "eip155",
+     "19": "eip155",
+-    "25": ["eip155", "canonical"],
 +    "25": [
 +      "eip155",
 +      "canonical"
@@ -4922,7 +5248,7 @@ index b6d9752..90caaa2 100644
      "28": "eip155",
      "30": "canonical",
      "31": "canonical",
-@@ -33,12 +42,24 @@
+@@ -36,12 +45,24 @@
      "40": "canonical",
      "41": "canonical",
      "42": "canonical",
@@ -4951,7 +5277,7 @@ index b6d9752..90caaa2 100644
      "57": "eip155",
      "61": "eip155",
      "63": "eip155",
-@@ -46,9 +67,15 @@
+@@ -49,9 +70,15 @@
      "71": "canonical",
      "81": "eip155",
      "82": "eip155",
@@ -4969,7 +5295,7 @@ index b6d9752..90caaa2 100644
      "106": "eip155",
      "108": "eip155",
      "109": "eip155",
-@@ -61,11 +88,23 @@
+@@ -65,11 +92,23 @@
      "169": "canonical",
      "179": "eip155",
      "195": "eip155",
@@ -4996,8 +5322,8 @@ index b6d9752..90caaa2 100644
 +    ],
      "255": "eip155",
      "280": "zksync",
-     "288": "eip155",
-@@ -74,7 +113,10 @@
+     "282": "zksync",
+@@ -79,7 +118,10 @@
      "321": "canonical",
      "322": "canonical",
      "324": "zksync",
@@ -5008,10 +5334,16 @@ index b6d9752..90caaa2 100644
 +    ],
      "338": "eip155",
      "369": "canonical",
-     "420": "eip155",
-@@ -86,20 +128,32 @@
+     "388": "zksync",
+@@ -91,22 +133,37 @@
+     "592": "canonical",
      "595": "eip155",
      "599": "eip155",
+-    "648": ["canonical", "eip155"],
++    "648": [
++      "canonical",
++      "eip155"
++    ],
      "686": "eip155",
 -    "690": ["eip155", "canonical"],
 +    "690": [
@@ -5046,12 +5378,17 @@ index b6d9752..90caaa2 100644
      "1230": "eip155",
      "1231": "eip155",
      "1284": "canonical",
-@@ -124,8 +178,14 @@
+@@ -131,9 +188,18 @@
      "2020": "canonical",
      "2021": "canonical",
      "2039": "canonical",
+-    "2192": ["canonical", "eip155"],
 -    "2221": ["canonical", "eip155"],
 -    "2222": ["canonical", "eip155"],
++    "2192": [
++      "canonical",
++      "eip155"
++    ],
 +    "2221": [
 +      "canonical",
 +      "eip155"
@@ -5063,7 +5400,7 @@ index b6d9752..90caaa2 100644
      "2331": "canonical",
      "2358": "eip155",
      "2810": "eip155",
-@@ -142,26 +202,50 @@
+@@ -150,26 +216,50 @@
      "4689": "eip155",
      "4918": "canonical",
      "4919": "canonical",
@@ -5122,7 +5459,7 @@ index b6d9752..90caaa2 100644
      "9728": "eip155",
      "10000": "eip155",
      "10001": "eip155",
-@@ -181,8 +265,14 @@
+@@ -189,8 +279,14 @@
      "13337": "canonical",
      "13371": "eip155",
      "13473": "eip155",
@@ -5139,12 +5476,19 @@ index b6d9752..90caaa2 100644
      "17172": "eip155",
      "18231": "canonical",
      "18233": "canonical",
-@@ -190,13 +280,25 @@
-     "23294": "eip155",
+@@ -199,49 +295,91 @@
      "23295": "eip155",
      "28979": "canonical",
+     "33401": "canonical",
 -    "34443": ["canonical", "eip155"],
 +    "34443": [
++      "canonical",
++      "eip155"
++    ],
+     "35441": "canonical",
+     "35443": "canonical",
+-    "41455": ["canonical", "eip155"],
++    "41455": [
 +      "canonical",
 +      "eip155"
 +    ],
@@ -5169,17 +5513,31 @@ index b6d9752..90caaa2 100644
      "43288": "eip155",
      "44787": "canonical",
      "45000": "canonical",
-@@ -208,25 +310,46 @@
+     "47763": "canonical",
+     "47805": "canonical",
+     "48899": "eip155",
+-    "48900": ["canonical", "eip155"],
++    "48900": [
++      "canonical",
++      "eip155"
++    ],
+     "53457": "canonical",
+     "54211": "eip155",
      "56288": "eip155",
      "57000": "eip155",
      "58008": "canonical",
 -    "59140": ["canonical", "eip155"],
 -    "59144": ["canonical", "eip155"],
+-    "60808": ["canonical", "eip155"],
 +    "59140": [
 +      "canonical",
 +      "eip155"
 +    ],
 +    "59144": [
++      "canonical",
++      "eip155"
++    ],
++    "60808": [
 +      "canonical",
 +      "eip155"
 +    ],
@@ -5202,6 +5560,7 @@ index b6d9752..90caaa2 100644
 +      "eip155",
 +      "canonical"
 +    ],
+     "97435": "canonical",
      "103454": "eip155",
      "111188": "canonical",
 -    "128123": ["eip155", "canonical"],
@@ -5223,7 +5582,7 @@ index b6d9752..90caaa2 100644
      "200101": "canonical",
      "200202": "canonical",
      "200810": "canonical",
-@@ -234,43 +357,85 @@
+@@ -250,28 +388,58 @@
      "421611": "canonical",
      "421613": "canonical",
      "421614": "canonical",
@@ -5253,6 +5612,7 @@ index b6d9752..90caaa2 100644
 +      "canonical"
 +    ],
      "764984": "canonical",
+     "808813": "eip155",
      "810180": "zksync",
      "978657": "canonical",
 -    "6038361": ["eip155", "canonical"],
@@ -5291,16 +5651,18 @@ index b6d9752..90caaa2 100644
      "161221135": "canonical",
      "168587773": "canonical",
      "222000222": "canonical",
-     "245022926": "eip155",
-     "245022934": "eip155",
+@@ -280,10 +448,19 @@
+     "328527624": "canonical",
      "333000333": "canonical",
+     "476462898": "canonical",
 -    "666666666": ["canonical", "eip155"],
--    "999999999": ["canonical", "eip155"],
--    "1313161554": ["canonical", "eip155"],
 +    "666666666": [
 +      "canonical",
 +      "eip155"
 +    ],
+     "888888888": "canonical",
+-    "999999999": ["canonical", "eip155"],
+-    "1313161554": ["canonical", "eip155"],
 +    "999999999": [
 +      "canonical",
 +      "eip155"
@@ -5310,8 +5672,9 @@ index b6d9752..90caaa2 100644
 +      "eip155"
 +    ],
      "1313161555": "canonical",
+     "1511670449": "canonical",
      "1666600000": "eip155",
-     "1666700000": "eip155",
+@@ -291,7 +468,10 @@
      "11297108099": "canonical",
      "11297108109": "canonical",
      "37714555429": "canonical",
@@ -5323,11 +5686,11 @@ index b6d9752..90caaa2 100644
    },
    "abi": [
      {
-diff --git a/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/gnosis_safe_l2.json b/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/gnosis_safe_l2.json
-index a3ba60b..66eef0e 100644
---- a/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/gnosis_safe_l2.json
-+++ b/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/gnosis_safe_l2.json
-@@ -17,15 +17,24 @@
+diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/gnosis_safe_l2.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/gnosis_safe_l2.json
+index 464269f..b7b51b3 100644
+--- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/gnosis_safe_l2.json
++++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/gnosis_safe_l2.json
+@@ -17,18 +17,27 @@
      }
    },
    "networkAddresses": {
@@ -5346,9 +5709,12 @@ index a3ba60b..66eef0e 100644
 +    ],
      "11": "canonical",
      "12": "canonical",
+     "14": "canonical",
+     "16": "eip155",
 -    "18": "eip155",
--    "25": ["eip155", "canonical"],
 +    "5115": "eip155",
+     "19": "eip155",
+-    "25": ["eip155", "canonical"],
 +    "25": [
 +      "eip155",
 +      "canonical"
@@ -5356,7 +5722,7 @@ index a3ba60b..66eef0e 100644
      "28": "eip155",
      "30": "canonical",
      "31": "canonical",
-@@ -33,12 +42,24 @@
+@@ -36,12 +45,24 @@
      "40": "canonical",
      "41": "canonical",
      "42": "canonical",
@@ -5385,7 +5751,7 @@ index a3ba60b..66eef0e 100644
      "57": "eip155",
      "61": "eip155",
      "63": "eip155",
-@@ -46,9 +67,15 @@
+@@ -49,9 +70,15 @@
      "71": "canonical",
      "81": "eip155",
      "82": "eip155",
@@ -5403,7 +5769,7 @@ index a3ba60b..66eef0e 100644
      "106": "eip155",
      "108": "eip155",
      "109": "eip155",
-@@ -61,11 +88,23 @@
+@@ -65,11 +92,23 @@
      "169": "canonical",
      "179": "eip155",
      "195": "eip155",
@@ -5430,8 +5796,8 @@ index a3ba60b..66eef0e 100644
 +    ],
      "255": "eip155",
      "280": "zksync",
-     "288": "eip155",
-@@ -74,7 +113,10 @@
+     "282": "zksync",
+@@ -79,7 +118,10 @@
      "321": "canonical",
      "322": "canonical",
      "324": "zksync",
@@ -5442,10 +5808,16 @@ index a3ba60b..66eef0e 100644
 +    ],
      "338": "eip155",
      "369": "canonical",
-     "420": "eip155",
-@@ -86,20 +128,32 @@
+     "388": "zksync",
+@@ -91,22 +133,37 @@
+     "592": "canonical",
      "595": "eip155",
      "599": "eip155",
+-    "648": ["canonical", "eip155"],
++    "648": [
++      "canonical",
++      "eip155"
++    ],
      "686": "eip155",
 -    "690": ["eip155", "canonical"],
 +    "690": [
@@ -5480,12 +5852,17 @@ index a3ba60b..66eef0e 100644
      "1230": "eip155",
      "1231": "eip155",
      "1284": "canonical",
-@@ -124,8 +178,14 @@
+@@ -131,9 +188,18 @@
      "2020": "canonical",
      "2021": "canonical",
      "2039": "canonical",
+-    "2192": ["canonical", "eip155"],
 -    "2221": ["canonical", "eip155"],
 -    "2222": ["canonical", "eip155"],
++    "2192": [
++      "canonical",
++      "eip155"
++    ],
 +    "2221": [
 +      "canonical",
 +      "eip155"
@@ -5497,7 +5874,7 @@ index a3ba60b..66eef0e 100644
      "2331": "canonical",
      "2358": "eip155",
      "2810": "eip155",
-@@ -142,26 +202,50 @@
+@@ -150,26 +216,50 @@
      "4689": "eip155",
      "4918": "canonical",
      "4919": "canonical",
@@ -5556,7 +5933,7 @@ index a3ba60b..66eef0e 100644
      "9728": "eip155",
      "10000": "eip155",
      "10001": "eip155",
-@@ -181,8 +265,14 @@
+@@ -189,8 +279,14 @@
      "13337": "canonical",
      "13371": "eip155",
      "13473": "eip155",
@@ -5573,12 +5950,19 @@ index a3ba60b..66eef0e 100644
      "17172": "eip155",
      "18231": "canonical",
      "18233": "canonical",
-@@ -190,13 +280,25 @@
-     "23294": "eip155",
+@@ -199,49 +295,91 @@
      "23295": "eip155",
      "28979": "canonical",
+     "33401": "canonical",
 -    "34443": ["canonical", "eip155"],
 +    "34443": [
++      "canonical",
++      "eip155"
++    ],
+     "35441": "canonical",
+     "35443": "canonical",
+-    "41455": ["canonical", "eip155"],
++    "41455": [
 +      "canonical",
 +      "eip155"
 +    ],
@@ -5603,13 +5987,27 @@ index a3ba60b..66eef0e 100644
      "43288": "eip155",
      "44787": "canonical",
      "45000": "canonical",
-@@ -208,25 +310,46 @@
+     "47763": "canonical",
+     "47805": "canonical",
+     "48899": "eip155",
+-    "48900": ["canonical", "eip155"],
++    "48900": [
++      "canonical",
++      "eip155"
++    ],
+     "53457": "canonical",
+     "54211": "eip155",
      "56288": "eip155",
      "57000": "eip155",
      "58008": "canonical",
 -    "59140": ["canonical", "eip155"],
+-    "60808": ["canonical", "eip155"],
 -    "59144": ["canonical", "eip155"],
 +    "59140": [
++      "canonical",
++      "eip155"
++    ],
++    "60808": [
 +      "canonical",
 +      "eip155"
 +    ],
@@ -5636,6 +6034,7 @@ index a3ba60b..66eef0e 100644
 +      "eip155",
 +      "canonical"
 +    ],
+     "97435": "canonical",
      "103454": "eip155",
      "111188": "canonical",
 -    "128123": ["eip155", "canonical"],
@@ -5657,7 +6056,7 @@ index a3ba60b..66eef0e 100644
      "200101": "canonical",
      "200202": "canonical",
      "200810": "canonical",
-@@ -234,43 +357,85 @@
+@@ -250,28 +388,58 @@
      "421611": "canonical",
      "421613": "canonical",
      "421614": "canonical",
@@ -5687,6 +6086,7 @@ index a3ba60b..66eef0e 100644
 +      "canonical"
 +    ],
      "764984": "canonical",
+     "808813": "eip155",
      "810180": "zksync",
      "978657": "canonical",
 -    "6038361": ["eip155", "canonical"],
@@ -5725,16 +6125,18 @@ index a3ba60b..66eef0e 100644
      "161221135": "canonical",
      "168587773": "canonical",
      "222000222": "canonical",
-     "245022926": "eip155",
-     "245022934": "eip155",
+@@ -280,10 +448,19 @@
+     "328527624": "canonical",
      "333000333": "canonical",
+     "476462898": "canonical",
 -    "666666666": ["canonical", "eip155"],
--    "999999999": ["canonical", "eip155"],
--    "1313161554": ["canonical", "eip155"],
 +    "666666666": [
 +      "canonical",
 +      "eip155"
 +    ],
+     "888888888": "canonical",
+-    "999999999": ["canonical", "eip155"],
+-    "1313161554": ["canonical", "eip155"],
 +    "999999999": [
 +      "canonical",
 +      "eip155"
@@ -5744,8 +6146,9 @@ index a3ba60b..66eef0e 100644
 +      "eip155"
 +    ],
      "1313161555": "canonical",
+     "1511670449": "canonical",
      "1666600000": "eip155",
-     "1666700000": "eip155",
+@@ -291,7 +468,10 @@
      "11297108099": "canonical",
      "11297108109": "canonical",
      "37714555429": "canonical",
@@ -5757,11 +6160,11 @@ index a3ba60b..66eef0e 100644
    },
    "abi": [
      {
-diff --git a/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/multi_send.json b/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/multi_send.json
-index b3d4c33..4277b46 100644
---- a/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/multi_send.json
-+++ b/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/multi_send.json
-@@ -17,15 +17,24 @@
+diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/multi_send.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/multi_send.json
+index dff0a86..7ed4e4a 100644
+--- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/multi_send.json
++++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/multi_send.json
+@@ -17,18 +17,27 @@
      }
    },
    "networkAddresses": {
@@ -5780,9 +6183,12 @@ index b3d4c33..4277b46 100644
 +    ],
      "11": "canonical",
      "12": "canonical",
+     "14": "canonical",
+     "16": "eip155",
 -    "18": "eip155",
--    "25": ["eip155", "canonical"],
 +    "5115": "eip155",
+     "19": "eip155",
+-    "25": ["eip155", "canonical"],
 +    "25": [
 +      "eip155",
 +      "canonical"
@@ -5790,7 +6196,7 @@ index b3d4c33..4277b46 100644
      "28": "eip155",
      "30": "canonical",
      "31": "canonical",
-@@ -33,12 +42,24 @@
+@@ -36,12 +45,24 @@
      "40": "canonical",
      "41": "canonical",
      "42": "canonical",
@@ -5819,7 +6225,7 @@ index b3d4c33..4277b46 100644
      "57": "eip155",
      "61": "eip155",
      "63": "eip155",
-@@ -46,9 +67,15 @@
+@@ -49,9 +70,15 @@
      "71": "canonical",
      "81": "eip155",
      "82": "eip155",
@@ -5837,7 +6243,7 @@ index b3d4c33..4277b46 100644
      "106": "eip155",
      "108": "eip155",
      "109": "eip155",
-@@ -61,11 +88,23 @@
+@@ -65,11 +92,23 @@
      "169": "canonical",
      "179": "eip155",
      "195": "eip155",
@@ -5864,8 +6270,8 @@ index b3d4c33..4277b46 100644
 +    ],
      "255": "eip155",
      "280": "zksync",
-     "288": "eip155",
-@@ -74,7 +113,10 @@
+     "282": "zksync",
+@@ -79,7 +118,10 @@
      "321": "canonical",
      "322": "canonical",
      "324": "zksync",
@@ -5876,10 +6282,16 @@ index b3d4c33..4277b46 100644
 +    ],
      "338": "eip155",
      "369": "canonical",
-     "420": "eip155",
-@@ -86,20 +128,32 @@
+     "388": "zksync",
+@@ -91,22 +133,37 @@
+     "592": "canonical",
      "595": "eip155",
      "599": "eip155",
+-    "648": ["canonical", "eip155"],
++    "648": [
++      "canonical",
++      "eip155"
++    ],
      "686": "eip155",
 -    "690": ["eip155", "canonical"],
 +    "690": [
@@ -5914,12 +6326,17 @@ index b3d4c33..4277b46 100644
      "1230": "eip155",
      "1231": "eip155",
      "1284": "canonical",
-@@ -124,8 +178,14 @@
+@@ -131,9 +188,18 @@
      "2020": "canonical",
      "2021": "canonical",
      "2039": "canonical",
+-    "2192": ["canonical", "eip155"],
 -    "2221": ["canonical", "eip155"],
 -    "2222": ["canonical", "eip155"],
++    "2192": [
++      "canonical",
++      "eip155"
++    ],
 +    "2221": [
 +      "canonical",
 +      "eip155"
@@ -5931,7 +6348,7 @@ index b3d4c33..4277b46 100644
      "2331": "canonical",
      "2358": "eip155",
      "2810": "eip155",
-@@ -142,26 +202,50 @@
+@@ -150,26 +216,50 @@
      "4689": "eip155",
      "4918": "canonical",
      "4919": "canonical",
@@ -5990,7 +6407,7 @@ index b3d4c33..4277b46 100644
      "9728": "eip155",
      "10000": "eip155",
      "10001": "eip155",
-@@ -181,8 +265,14 @@
+@@ -189,8 +279,14 @@
      "13337": "canonical",
      "13371": "eip155",
      "13473": "eip155",
@@ -6007,12 +6424,19 @@ index b3d4c33..4277b46 100644
      "17172": "eip155",
      "18231": "canonical",
      "18233": "canonical",
-@@ -190,13 +280,25 @@
-     "23294": "eip155",
+@@ -199,49 +295,91 @@
      "23295": "eip155",
      "28979": "canonical",
+     "33401": "canonical",
 -    "34443": ["canonical", "eip155"],
 +    "34443": [
++      "canonical",
++      "eip155"
++    ],
+     "35441": "canonical",
+     "35443": "canonical",
+-    "41455": ["canonical", "eip155"],
++    "41455": [
 +      "canonical",
 +      "eip155"
 +    ],
@@ -6037,17 +6461,31 @@ index b3d4c33..4277b46 100644
      "43288": "eip155",
      "44787": "canonical",
      "45000": "canonical",
-@@ -208,25 +310,46 @@
+     "47763": "canonical",
+     "47805": "canonical",
+     "48899": "eip155",
+-    "48900": ["canonical", "eip155"],
++    "48900": [
++      "canonical",
++      "eip155"
++    ],
+     "53457": "canonical",
+     "54211": "eip155",
      "56288": "eip155",
      "57000": "eip155",
      "58008": "canonical",
 -    "59140": ["canonical", "eip155"],
 -    "59144": ["canonical", "eip155"],
+-    "60808": ["canonical", "eip155"],
 +    "59140": [
 +      "canonical",
 +      "eip155"
 +    ],
 +    "59144": [
++      "canonical",
++      "eip155"
++    ],
++    "60808": [
 +      "canonical",
 +      "eip155"
 +    ],
@@ -6070,6 +6508,7 @@ index b3d4c33..4277b46 100644
 +      "eip155",
 +      "canonical"
 +    ],
+     "97435": "canonical",
      "103454": "eip155",
      "111188": "canonical",
 -    "128123": ["eip155", "canonical"],
@@ -6091,7 +6530,7 @@ index b3d4c33..4277b46 100644
      "200101": "canonical",
      "200202": "canonical",
      "200810": "canonical",
-@@ -234,43 +357,85 @@
+@@ -250,28 +388,58 @@
      "421611": "canonical",
      "421613": "canonical",
      "421614": "canonical",
@@ -6121,6 +6560,7 @@ index b3d4c33..4277b46 100644
 +      "canonical"
 +    ],
      "764984": "canonical",
+     "808813": "eip155",
      "810180": "zksync",
      "978657": "canonical",
 -    "6038361": ["eip155", "canonical"],
@@ -6159,16 +6599,18 @@ index b3d4c33..4277b46 100644
      "161221135": "canonical",
      "168587773": "canonical",
      "222000222": "canonical",
-     "245022926": "eip155",
-     "245022934": "eip155",
+@@ -280,10 +448,19 @@
+     "328527624": "canonical",
      "333000333": "canonical",
+     "476462898": "canonical",
 -    "666666666": ["canonical", "eip155"],
--    "999999999": ["canonical", "eip155"],
--    "1313161554": ["canonical", "eip155"],
 +    "666666666": [
 +      "canonical",
 +      "eip155"
 +    ],
+     "888888888": "canonical",
+-    "999999999": ["canonical", "eip155"],
+-    "1313161554": ["canonical", "eip155"],
 +    "999999999": [
 +      "canonical",
 +      "eip155"
@@ -6178,8 +6620,9 @@ index b3d4c33..4277b46 100644
 +      "eip155"
 +    ],
      "1313161555": "canonical",
+     "1511670449": "canonical",
      "1666600000": "eip155",
-     "1666700000": "eip155",
+@@ -291,7 +468,10 @@
      "11297108099": "canonical",
      "11297108109": "canonical",
      "37714555429": "canonical",
@@ -6191,11 +6634,11 @@ index b3d4c33..4277b46 100644
    },
    "abi": [
      {
-diff --git a/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/multi_send_call_only.json b/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/multi_send_call_only.json
-index f68156c..b90de35 100644
---- a/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/multi_send_call_only.json
-+++ b/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/multi_send_call_only.json
-@@ -17,15 +17,24 @@
+diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/multi_send_call_only.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/multi_send_call_only.json
+index 0c55f6b..c568845 100644
+--- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/multi_send_call_only.json
++++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/multi_send_call_only.json
+@@ -17,18 +17,27 @@
      }
    },
    "networkAddresses": {
@@ -6214,9 +6657,12 @@ index f68156c..b90de35 100644
 +    ],
      "11": "canonical",
      "12": "canonical",
+     "14": "canonical",
+     "16": "eip155",
 -    "18": "eip155",
--    "25": ["eip155", "canonical"],
 +    "5115": "eip155",
+     "19": "eip155",
+-    "25": ["eip155", "canonical"],
 +    "25": [
 +      "eip155",
 +      "canonical"
@@ -6224,7 +6670,7 @@ index f68156c..b90de35 100644
      "28": "eip155",
      "30": "canonical",
      "31": "canonical",
-@@ -33,12 +42,24 @@
+@@ -36,12 +45,24 @@
      "40": "canonical",
      "41": "canonical",
      "42": "canonical",
@@ -6253,7 +6699,7 @@ index f68156c..b90de35 100644
      "57": "eip155",
      "61": "eip155",
      "63": "eip155",
-@@ -46,9 +67,15 @@
+@@ -49,9 +70,15 @@
      "71": "canonical",
      "81": "eip155",
      "82": "eip155",
@@ -6271,7 +6717,7 @@ index f68156c..b90de35 100644
      "106": "eip155",
      "108": "eip155",
      "109": "eip155",
-@@ -61,11 +88,23 @@
+@@ -65,11 +92,23 @@
      "169": "canonical",
      "179": "eip155",
      "195": "eip155",
@@ -6298,8 +6744,8 @@ index f68156c..b90de35 100644
 +    ],
      "255": "eip155",
      "280": "zksync",
-     "288": "eip155",
-@@ -74,7 +113,10 @@
+     "282": "zksync",
+@@ -79,7 +118,10 @@
      "321": "canonical",
      "322": "canonical",
      "324": "zksync",
@@ -6310,10 +6756,16 @@ index f68156c..b90de35 100644
 +    ],
      "338": "eip155",
      "369": "canonical",
-     "420": "eip155",
-@@ -86,20 +128,32 @@
+     "388": "zksync",
+@@ -91,22 +133,37 @@
+     "592": "canonical",
      "595": "eip155",
      "599": "eip155",
+-    "648": ["canonical", "eip155"],
++    "648": [
++      "canonical",
++      "eip155"
++    ],
      "686": "eip155",
 -    "690": ["eip155", "canonical"],
 +    "690": [
@@ -6348,12 +6800,17 @@ index f68156c..b90de35 100644
      "1230": "eip155",
      "1231": "eip155",
      "1284": "canonical",
-@@ -124,8 +178,14 @@
+@@ -131,9 +188,18 @@
      "2020": "canonical",
      "2021": "canonical",
      "2039": "canonical",
+-    "2192": ["canonical", "eip155"],
 -    "2221": ["canonical", "eip155"],
 -    "2222": ["canonical", "eip155"],
++    "2192": [
++      "canonical",
++      "eip155"
++    ],
 +    "2221": [
 +      "canonical",
 +      "eip155"
@@ -6365,7 +6822,7 @@ index f68156c..b90de35 100644
      "2331": "canonical",
      "2358": "eip155",
      "2810": "eip155",
-@@ -142,26 +202,50 @@
+@@ -150,26 +216,50 @@
      "4689": "eip155",
      "4918": "canonical",
      "4919": "canonical",
@@ -6424,7 +6881,7 @@ index f68156c..b90de35 100644
      "9728": "eip155",
      "10000": "eip155",
      "10001": "eip155",
-@@ -181,8 +265,14 @@
+@@ -189,8 +279,14 @@
      "13337": "canonical",
      "13371": "eip155",
      "13473": "eip155",
@@ -6441,12 +6898,19 @@ index f68156c..b90de35 100644
      "17172": "eip155",
      "18231": "canonical",
      "18233": "canonical",
-@@ -190,13 +280,25 @@
-     "23294": "eip155",
+@@ -199,49 +295,91 @@
      "23295": "eip155",
      "28979": "canonical",
+     "33401": "canonical",
 -    "34443": ["canonical", "eip155"],
 +    "34443": [
++      "canonical",
++      "eip155"
++    ],
+     "35441": "canonical",
+     "35443": "canonical",
+-    "41455": ["canonical", "eip155"],
++    "41455": [
 +      "canonical",
 +      "eip155"
 +    ],
@@ -6471,17 +6935,31 @@ index f68156c..b90de35 100644
      "43288": "eip155",
      "44787": "canonical",
      "45000": "canonical",
-@@ -208,25 +310,46 @@
+     "47763": "canonical",
+     "47805": "canonical",
+     "48899": "eip155",
+-    "48900": ["canonical", "eip155"],
++    "48900": [
++      "canonical",
++      "eip155"
++    ],
+     "53457": "canonical",
+     "54211": "eip155",
      "56288": "eip155",
      "57000": "eip155",
      "58008": "canonical",
 -    "59140": ["canonical", "eip155"],
 -    "59144": ["canonical", "eip155"],
+-    "60808": ["canonical", "eip155"],
 +    "59140": [
 +      "canonical",
 +      "eip155"
 +    ],
 +    "59144": [
++      "canonical",
++      "eip155"
++    ],
++    "60808": [
 +      "canonical",
 +      "eip155"
 +    ],
@@ -6504,6 +6982,7 @@ index f68156c..b90de35 100644
 +      "eip155",
 +      "canonical"
 +    ],
+     "97435": "canonical",
      "103454": "eip155",
      "111188": "canonical",
 -    "128123": ["eip155", "canonical"],
@@ -6525,7 +7004,7 @@ index f68156c..b90de35 100644
      "200101": "canonical",
      "200202": "canonical",
      "200810": "canonical",
-@@ -234,43 +357,85 @@
+@@ -250,28 +388,58 @@
      "421611": "canonical",
      "421613": "canonical",
      "421614": "canonical",
@@ -6555,6 +7034,7 @@ index f68156c..b90de35 100644
 +      "canonical"
 +    ],
      "764984": "canonical",
+     "808813": "eip155",
      "810180": "zksync",
      "978657": "canonical",
 -    "6038361": ["eip155", "canonical"],
@@ -6593,16 +7073,18 @@ index f68156c..b90de35 100644
      "161221135": "canonical",
      "168587773": "canonical",
      "222000222": "canonical",
-     "245022926": "eip155",
-     "245022934": "eip155",
+@@ -280,10 +448,19 @@
+     "328527624": "canonical",
      "333000333": "canonical",
+     "476462898": "canonical",
 -    "666666666": ["canonical", "eip155"],
--    "999999999": ["canonical", "eip155"],
--    "1313161554": ["canonical", "eip155"],
 +    "666666666": [
 +      "canonical",
 +      "eip155"
 +    ],
+     "888888888": "canonical",
+-    "999999999": ["canonical", "eip155"],
+-    "1313161554": ["canonical", "eip155"],
 +    "999999999": [
 +      "canonical",
 +      "eip155"
@@ -6612,8 +7094,9 @@ index f68156c..b90de35 100644
 +      "eip155"
 +    ],
      "1313161555": "canonical",
+     "1511670449": "canonical",
      "1666600000": "eip155",
-     "1666700000": "eip155",
+@@ -291,7 +468,10 @@
      "11297108099": "canonical",
      "11297108109": "canonical",
      "37714555429": "canonical",
@@ -6625,11 +7108,11 @@ index f68156c..b90de35 100644
    },
    "abi": [
      {
-diff --git a/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/proxy_factory.json b/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/proxy_factory.json
-index 6aa48b2..76b6f63 100644
---- a/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/proxy_factory.json
-+++ b/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/proxy_factory.json
-@@ -17,15 +17,24 @@
+diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/proxy_factory.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/proxy_factory.json
+index 251c624..e8ceb49 100644
+--- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/proxy_factory.json
++++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/proxy_factory.json
+@@ -17,18 +17,27 @@
      }
    },
    "networkAddresses": {
@@ -6648,9 +7131,12 @@ index 6aa48b2..76b6f63 100644
 +    ],
      "11": "canonical",
      "12": "canonical",
+     "14": "canonical",
+     "16": "eip155",
 -    "18": "eip155",
--    "25": ["eip155", "canonical"],
 +    "5115": "eip155",
+     "19": "eip155",
+-    "25": ["eip155", "canonical"],
 +    "25": [
 +      "eip155",
 +      "canonical"
@@ -6658,7 +7144,7 @@ index 6aa48b2..76b6f63 100644
      "28": "eip155",
      "30": "canonical",
      "31": "canonical",
-@@ -33,12 +42,24 @@
+@@ -36,12 +45,24 @@
      "40": "canonical",
      "41": "canonical",
      "42": "canonical",
@@ -6687,7 +7173,7 @@ index 6aa48b2..76b6f63 100644
      "57": "eip155",
      "61": "eip155",
      "63": "eip155",
-@@ -46,9 +67,15 @@
+@@ -49,9 +70,15 @@
      "71": "canonical",
      "81": "eip155",
      "82": "eip155",
@@ -6705,7 +7191,7 @@ index 6aa48b2..76b6f63 100644
      "106": "eip155",
      "108": "eip155",
      "109": "eip155",
-@@ -61,11 +88,23 @@
+@@ -65,11 +92,23 @@
      "169": "canonical",
      "179": "eip155",
      "195": "eip155",
@@ -6732,8 +7218,8 @@ index 6aa48b2..76b6f63 100644
 +    ],
      "255": "eip155",
      "280": "zksync",
-     "288": "eip155",
-@@ -74,7 +113,10 @@
+     "282": "zksync",
+@@ -79,7 +118,10 @@
      "321": "canonical",
      "322": "canonical",
      "324": "zksync",
@@ -6744,10 +7230,16 @@ index 6aa48b2..76b6f63 100644
 +    ],
      "338": "eip155",
      "369": "canonical",
-     "420": "eip155",
-@@ -86,20 +128,32 @@
+     "388": "zksync",
+@@ -91,22 +133,37 @@
+     "592": "canonical",
      "595": "eip155",
      "599": "eip155",
+-    "648": ["canonical", "eip155"],
++    "648": [
++      "canonical",
++      "eip155"
++    ],
      "686": "eip155",
 -    "690": ["eip155", "canonical"],
 +    "690": [
@@ -6782,12 +7274,17 @@ index 6aa48b2..76b6f63 100644
      "1230": "eip155",
      "1231": "eip155",
      "1284": "canonical",
-@@ -124,8 +178,14 @@
+@@ -131,9 +188,18 @@
      "2020": "canonical",
      "2021": "canonical",
      "2039": "canonical",
+-    "2192": ["canonical", "eip155"],
 -    "2221": ["canonical", "eip155"],
 -    "2222": ["canonical", "eip155"],
++    "2192": [
++      "canonical",
++      "eip155"
++    ],
 +    "2221": [
 +      "canonical",
 +      "eip155"
@@ -6799,7 +7296,7 @@ index 6aa48b2..76b6f63 100644
      "2331": "canonical",
      "2358": "eip155",
      "2810": "eip155",
-@@ -142,26 +202,50 @@
+@@ -150,26 +216,50 @@
      "4689": "eip155",
      "4918": "canonical",
      "4919": "canonical",
@@ -6858,7 +7355,7 @@ index 6aa48b2..76b6f63 100644
      "9728": "eip155",
      "10000": "eip155",
      "10001": "eip155",
-@@ -181,8 +265,14 @@
+@@ -189,8 +279,14 @@
      "13337": "canonical",
      "13371": "eip155",
      "13473": "eip155",
@@ -6875,12 +7372,19 @@ index 6aa48b2..76b6f63 100644
      "17172": "eip155",
      "18231": "canonical",
      "18233": "canonical",
-@@ -190,13 +280,25 @@
-     "23294": "eip155",
+@@ -199,49 +295,91 @@
      "23295": "eip155",
      "28979": "canonical",
+     "33401": "canonical",
 -    "34443": ["canonical", "eip155"],
 +    "34443": [
++      "canonical",
++      "eip155"
++    ],
+     "35441": "canonical",
+     "35443": "canonical",
+-    "41455": ["canonical", "eip155"],
++    "41455": [
 +      "canonical",
 +      "eip155"
 +    ],
@@ -6905,17 +7409,31 @@ index 6aa48b2..76b6f63 100644
      "43288": "eip155",
      "44787": "canonical",
      "45000": "canonical",
-@@ -208,25 +310,46 @@
+     "47763": "canonical",
+     "47805": "canonical",
+     "48899": "eip155",
+-    "48900": ["canonical", "eip155"],
++    "48900": [
++      "canonical",
++      "eip155"
++    ],
+     "53457": "canonical",
+     "54211": "eip155",
      "56288": "eip155",
      "57000": "eip155",
      "58008": "canonical",
 -    "59140": ["canonical", "eip155"],
 -    "59144": ["canonical", "eip155"],
+-    "60808": ["canonical", "eip155"],
 +    "59140": [
 +      "canonical",
 +      "eip155"
 +    ],
 +    "59144": [
++      "canonical",
++      "eip155"
++    ],
++    "60808": [
 +      "canonical",
 +      "eip155"
 +    ],
@@ -6938,6 +7456,7 @@ index 6aa48b2..76b6f63 100644
 +      "eip155",
 +      "canonical"
 +    ],
+     "97435": "canonical",
      "103454": "eip155",
      "111188": "canonical",
 -    "128123": ["eip155", "canonical"],
@@ -6959,7 +7478,7 @@ index 6aa48b2..76b6f63 100644
      "200101": "canonical",
      "200202": "canonical",
      "200810": "canonical",
-@@ -234,43 +357,85 @@
+@@ -250,28 +388,58 @@
      "421611": "canonical",
      "421613": "canonical",
      "421614": "canonical",
@@ -6989,6 +7508,7 @@ index 6aa48b2..76b6f63 100644
 +      "canonical"
 +    ],
      "764984": "canonical",
+     "808813": "eip155",
      "810180": "zksync",
      "978657": "canonical",
 -    "6038361": ["eip155", "canonical"],
@@ -7027,16 +7547,18 @@ index 6aa48b2..76b6f63 100644
      "161221135": "canonical",
      "168587773": "canonical",
      "222000222": "canonical",
-     "245022926": "eip155",
-     "245022934": "eip155",
+@@ -280,10 +448,19 @@
+     "328527624": "canonical",
      "333000333": "canonical",
+     "476462898": "canonical",
 -    "666666666": ["canonical", "eip155"],
--    "999999999": ["canonical", "eip155"],
--    "1313161554": ["canonical", "eip155"],
 +    "666666666": [
 +      "canonical",
 +      "eip155"
 +    ],
+     "888888888": "canonical",
+-    "999999999": ["canonical", "eip155"],
+-    "1313161554": ["canonical", "eip155"],
 +    "999999999": [
 +      "canonical",
 +      "eip155"
@@ -7046,8 +7568,9 @@ index 6aa48b2..76b6f63 100644
 +      "eip155"
 +    ],
      "1313161555": "canonical",
+     "1511670449": "canonical",
      "1666600000": "eip155",
-     "1666700000": "eip155",
+@@ -291,7 +468,10 @@
      "11297108099": "canonical",
      "11297108109": "canonical",
      "37714555429": "canonical",
@@ -7059,11 +7582,11 @@ index 6aa48b2..76b6f63 100644
    },
    "abi": [
      {
-diff --git a/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/sign_message_lib.json b/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/sign_message_lib.json
-index ffccbad..9f0ccdb 100644
---- a/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/sign_message_lib.json
-+++ b/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/sign_message_lib.json
-@@ -17,15 +17,24 @@
+diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/sign_message_lib.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/sign_message_lib.json
+index ed268ad..7e9250e 100644
+--- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/sign_message_lib.json
++++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/sign_message_lib.json
+@@ -17,18 +17,27 @@
      }
    },
    "networkAddresses": {
@@ -7082,9 +7605,12 @@ index ffccbad..9f0ccdb 100644
 +    ],
      "11": "canonical",
      "12": "canonical",
+     "14": "canonical",
+     "16": "eip155",
 -    "18": "eip155",
--    "25": ["eip155", "canonical"],
 +    "5115": "eip155",
+     "19": "eip155",
+-    "25": ["eip155", "canonical"],
 +    "25": [
 +      "eip155",
 +      "canonical"
@@ -7092,7 +7618,7 @@ index ffccbad..9f0ccdb 100644
      "28": "eip155",
      "30": "canonical",
      "31": "canonical",
-@@ -33,12 +42,24 @@
+@@ -36,12 +45,24 @@
      "40": "canonical",
      "41": "canonical",
      "42": "canonical",
@@ -7121,7 +7647,7 @@ index ffccbad..9f0ccdb 100644
      "57": "eip155",
      "61": "eip155",
      "63": "eip155",
-@@ -46,9 +67,15 @@
+@@ -49,9 +70,15 @@
      "71": "canonical",
      "81": "eip155",
      "82": "eip155",
@@ -7139,7 +7665,7 @@ index ffccbad..9f0ccdb 100644
      "106": "eip155",
      "108": "eip155",
      "109": "eip155",
-@@ -61,11 +88,23 @@
+@@ -65,11 +92,23 @@
      "169": "canonical",
      "179": "eip155",
      "195": "eip155",
@@ -7166,8 +7692,8 @@ index ffccbad..9f0ccdb 100644
 +    ],
      "255": "eip155",
      "280": "zksync",
-     "288": "eip155",
-@@ -74,7 +113,10 @@
+     "282": "zksync",
+@@ -79,7 +118,10 @@
      "321": "canonical",
      "322": "canonical",
      "324": "zksync",
@@ -7178,10 +7704,16 @@ index ffccbad..9f0ccdb 100644
 +    ],
      "338": "eip155",
      "369": "canonical",
-     "420": "eip155",
-@@ -86,20 +128,32 @@
+     "388": "zksync",
+@@ -91,22 +133,37 @@
+     "592": "canonical",
      "595": "eip155",
      "599": "eip155",
+-    "648": ["canonical", "eip155"],
++    "648": [
++      "canonical",
++      "eip155"
++    ],
      "686": "eip155",
 -    "690": ["eip155", "canonical"],
 +    "690": [
@@ -7216,12 +7748,17 @@ index ffccbad..9f0ccdb 100644
      "1230": "eip155",
      "1231": "eip155",
      "1284": "canonical",
-@@ -124,8 +178,14 @@
+@@ -131,9 +188,18 @@
      "2020": "canonical",
      "2021": "canonical",
      "2039": "canonical",
+-    "2192": ["canonical", "eip155"],
 -    "2221": ["canonical", "eip155"],
 -    "2222": ["canonical", "eip155"],
++    "2192": [
++      "canonical",
++      "eip155"
++    ],
 +    "2221": [
 +      "canonical",
 +      "eip155"
@@ -7233,7 +7770,7 @@ index ffccbad..9f0ccdb 100644
      "2331": "canonical",
      "2358": "eip155",
      "2810": "eip155",
-@@ -142,26 +202,50 @@
+@@ -150,26 +216,50 @@
      "4689": "eip155",
      "4918": "canonical",
      "4919": "canonical",
@@ -7292,7 +7829,7 @@ index ffccbad..9f0ccdb 100644
      "9728": "eip155",
      "10000": "eip155",
      "10001": "eip155",
-@@ -181,8 +265,14 @@
+@@ -189,8 +279,14 @@
      "13337": "canonical",
      "13371": "eip155",
      "13473": "eip155",
@@ -7309,12 +7846,19 @@ index ffccbad..9f0ccdb 100644
      "17172": "eip155",
      "18231": "canonical",
      "18233": "canonical",
-@@ -190,13 +280,25 @@
-     "23294": "eip155",
+@@ -199,49 +295,91 @@
      "23295": "eip155",
      "28979": "canonical",
+     "33401": "canonical",
 -    "34443": ["canonical", "eip155"],
 +    "34443": [
++      "canonical",
++      "eip155"
++    ],
+     "35441": "canonical",
+     "35443": "canonical",
+-    "41455": ["canonical", "eip155"],
++    "41455": [
 +      "canonical",
 +      "eip155"
 +    ],
@@ -7339,17 +7883,31 @@ index ffccbad..9f0ccdb 100644
      "43288": "eip155",
      "44787": "canonical",
      "45000": "canonical",
-@@ -208,25 +310,46 @@
+     "47763": "canonical",
+     "47805": "canonical",
+     "48899": "eip155",
+-    "48900": ["canonical", "eip155"],
++    "48900": [
++      "canonical",
++      "eip155"
++    ],
+     "53457": "canonical",
+     "54211": "eip155",
      "56288": "eip155",
      "57000": "eip155",
      "58008": "canonical",
 -    "59140": ["canonical", "eip155"],
 -    "59144": ["canonical", "eip155"],
+-    "60808": ["canonical", "eip155"],
 +    "59140": [
 +      "canonical",
 +      "eip155"
 +    ],
 +    "59144": [
++      "canonical",
++      "eip155"
++    ],
++    "60808": [
 +      "canonical",
 +      "eip155"
 +    ],
@@ -7372,6 +7930,7 @@ index ffccbad..9f0ccdb 100644
 +      "eip155",
 +      "canonical"
 +    ],
+     "97435": "canonical",
      "103454": "eip155",
      "111188": "canonical",
 -    "128123": ["eip155", "canonical"],
@@ -7393,7 +7952,7 @@ index ffccbad..9f0ccdb 100644
      "200101": "canonical",
      "200202": "canonical",
      "200810": "canonical",
-@@ -234,43 +357,85 @@
+@@ -250,28 +388,58 @@
      "421611": "canonical",
      "421613": "canonical",
      "421614": "canonical",
@@ -7423,6 +7982,7 @@ index ffccbad..9f0ccdb 100644
 +      "canonical"
 +    ],
      "764984": "canonical",
+     "808813": "eip155",
      "810180": "zksync",
      "978657": "canonical",
 -    "6038361": ["eip155", "canonical"],
@@ -7461,16 +8021,18 @@ index ffccbad..9f0ccdb 100644
      "161221135": "canonical",
      "168587773": "canonical",
      "222000222": "canonical",
-     "245022926": "eip155",
-     "245022934": "eip155",
+@@ -280,10 +448,19 @@
+     "328527624": "canonical",
      "333000333": "canonical",
+     "476462898": "canonical",
 -    "666666666": ["canonical", "eip155"],
--    "999999999": ["canonical", "eip155"],
--    "1313161554": ["canonical", "eip155"],
 +    "666666666": [
 +      "canonical",
 +      "eip155"
 +    ],
+     "888888888": "canonical",
+-    "999999999": ["canonical", "eip155"],
+-    "1313161554": ["canonical", "eip155"],
 +    "999999999": [
 +      "canonical",
 +      "eip155"
@@ -7480,8 +8042,9 @@ index ffccbad..9f0ccdb 100644
 +      "eip155"
 +    ],
      "1313161555": "canonical",
+     "1511670449": "canonical",
      "1666600000": "eip155",
-     "1666700000": "eip155",
+@@ -291,7 +468,10 @@
      "11297108099": "canonical",
      "11297108109": "canonical",
      "37714555429": "canonical",
@@ -7493,11 +8056,11 @@ index ffccbad..9f0ccdb 100644
    },
    "abi": [
      {
-diff --git a/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/simulate_tx_accessor.json b/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/simulate_tx_accessor.json
-index ba1d970..08aedab 100644
---- a/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/simulate_tx_accessor.json
-+++ b/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/simulate_tx_accessor.json
-@@ -17,15 +17,24 @@
+diff --git a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/simulate_tx_accessor.json b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/simulate_tx_accessor.json
+index b9cba81..4068848 100644
+--- a/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/simulate_tx_accessor.json
++++ b/node_modules/@safe-global/protocol-kit/node_modules/@safe-global/safe-deployments/src/assets/v1.3.0/simulate_tx_accessor.json
+@@ -17,18 +17,27 @@
      }
    },
    "networkAddresses": {
@@ -7516,9 +8079,12 @@ index ba1d970..08aedab 100644
 +    ],
      "11": "canonical",
      "12": "canonical",
+     "14": "canonical",
+     "16": "eip155",
 -    "18": "eip155",
--    "25": ["eip155", "canonical"],
 +    "5115": "eip155",
+     "19": "eip155",
+-    "25": ["eip155", "canonical"],
 +    "25": [
 +      "eip155",
 +      "canonical"
@@ -7526,7 +8092,7 @@ index ba1d970..08aedab 100644
      "28": "eip155",
      "30": "canonical",
      "31": "canonical",
-@@ -33,12 +42,24 @@
+@@ -36,12 +45,24 @@
      "40": "canonical",
      "41": "canonical",
      "42": "canonical",
@@ -7555,7 +8121,7 @@ index ba1d970..08aedab 100644
      "57": "eip155",
      "61": "eip155",
      "63": "eip155",
-@@ -46,9 +67,15 @@
+@@ -49,9 +70,15 @@
      "71": "canonical",
      "81": "eip155",
      "82": "eip155",
@@ -7573,7 +8139,7 @@ index ba1d970..08aedab 100644
      "106": "eip155",
      "108": "eip155",
      "109": "eip155",
-@@ -61,11 +88,23 @@
+@@ -65,11 +92,23 @@
      "169": "canonical",
      "179": "eip155",
      "195": "eip155",
@@ -7600,8 +8166,8 @@ index ba1d970..08aedab 100644
 +    ],
      "255": "eip155",
      "280": "zksync",
-     "288": "eip155",
-@@ -74,7 +113,10 @@
+     "282": "zksync",
+@@ -79,7 +118,10 @@
      "321": "canonical",
      "322": "canonical",
      "324": "zksync",
@@ -7612,10 +8178,16 @@ index ba1d970..08aedab 100644
 +    ],
      "338": "eip155",
      "369": "canonical",
-     "420": "eip155",
-@@ -86,20 +128,32 @@
+     "388": "zksync",
+@@ -91,22 +133,37 @@
+     "592": "canonical",
      "595": "eip155",
      "599": "eip155",
+-    "648": ["canonical", "eip155"],
++    "648": [
++      "canonical",
++      "eip155"
++    ],
      "686": "eip155",
 -    "690": ["eip155", "canonical"],
 +    "690": [
@@ -7650,12 +8222,17 @@ index ba1d970..08aedab 100644
      "1230": "eip155",
      "1231": "eip155",
      "1284": "canonical",
-@@ -124,8 +178,14 @@
+@@ -131,9 +188,18 @@
      "2020": "canonical",
      "2021": "canonical",
      "2039": "canonical",
+-    "2192": ["canonical", "eip155"],
 -    "2221": ["canonical", "eip155"],
 -    "2222": ["canonical", "eip155"],
++    "2192": [
++      "canonical",
++      "eip155"
++    ],
 +    "2221": [
 +      "canonical",
 +      "eip155"
@@ -7667,7 +8244,7 @@ index ba1d970..08aedab 100644
      "2331": "canonical",
      "2358": "eip155",
      "2810": "eip155",
-@@ -142,26 +202,50 @@
+@@ -150,26 +216,50 @@
      "4689": "eip155",
      "4918": "canonical",
      "4919": "canonical",
@@ -7726,7 +8303,7 @@ index ba1d970..08aedab 100644
      "9728": "eip155",
      "10000": "eip155",
      "10001": "eip155",
-@@ -181,8 +265,14 @@
+@@ -189,8 +279,14 @@
      "13337": "canonical",
      "13371": "eip155",
      "13473": "eip155",
@@ -7743,12 +8320,19 @@ index ba1d970..08aedab 100644
      "17172": "eip155",
      "18231": "canonical",
      "18233": "canonical",
-@@ -190,13 +280,25 @@
-     "23294": "eip155",
+@@ -199,49 +295,91 @@
      "23295": "eip155",
      "28979": "canonical",
+     "33401": "canonical",
 -    "34443": ["canonical", "eip155"],
 +    "34443": [
++      "canonical",
++      "eip155"
++    ],
+     "35441": "canonical",
+     "35443": "canonical",
+-    "41455": ["canonical", "eip155"],
++    "41455": [
 +      "canonical",
 +      "eip155"
 +    ],
@@ -7773,17 +8357,31 @@ index ba1d970..08aedab 100644
      "43288": "eip155",
      "44787": "canonical",
      "45000": "canonical",
-@@ -208,25 +310,46 @@
+     "47763": "canonical",
+     "47805": "canonical",
+     "48899": "eip155",
+-    "48900": ["canonical", "eip155"],
++    "48900": [
++      "canonical",
++      "eip155"
++    ],
+     "53457": "canonical",
+     "54211": "eip155",
      "56288": "eip155",
      "57000": "eip155",
      "58008": "canonical",
 -    "59140": ["canonical", "eip155"],
 -    "59144": ["canonical", "eip155"],
+-    "60808": ["canonical", "eip155"],
 +    "59140": [
 +      "canonical",
 +      "eip155"
 +    ],
 +    "59144": [
++      "canonical",
++      "eip155"
++    ],
++    "60808": [
 +      "canonical",
 +      "eip155"
 +    ],
@@ -7806,6 +8404,7 @@ index ba1d970..08aedab 100644
 +      "eip155",
 +      "canonical"
 +    ],
+     "97435": "canonical",
      "103454": "eip155",
      "111188": "canonical",
 -    "128123": ["eip155", "canonical"],
@@ -7827,7 +8426,7 @@ index ba1d970..08aedab 100644
      "200101": "canonical",
      "200202": "canonical",
      "200810": "canonical",
-@@ -234,43 +357,85 @@
+@@ -250,28 +388,58 @@
      "421611": "canonical",
      "421613": "canonical",
      "421614": "canonical",
@@ -7857,6 +8456,7 @@ index ba1d970..08aedab 100644
 +      "canonical"
 +    ],
      "764984": "canonical",
+     "808813": "eip155",
      "810180": "zksync",
      "978657": "canonical",
 -    "6038361": ["eip155", "canonical"],
@@ -7895,16 +8495,18 @@ index ba1d970..08aedab 100644
      "161221135": "canonical",
      "168587773": "canonical",
      "222000222": "canonical",
-     "245022926": "eip155",
-     "245022934": "eip155",
+@@ -280,10 +448,19 @@
+     "328527624": "canonical",
      "333000333": "canonical",
+     "476462898": "canonical",
 -    "666666666": ["canonical", "eip155"],
--    "999999999": ["canonical", "eip155"],
--    "1313161554": ["canonical", "eip155"],
 +    "666666666": [
 +      "canonical",
 +      "eip155"
 +    ],
+     "888888888": "canonical",
+-    "999999999": ["canonical", "eip155"],
+-    "1313161554": ["canonical", "eip155"],
 +    "999999999": [
 +      "canonical",
 +      "eip155"
@@ -7914,8 +8516,9 @@ index ba1d970..08aedab 100644
 +      "eip155"
 +    ],
      "1313161555": "canonical",
+     "1511670449": "canonical",
      "1666600000": "eip155",
-     "1666700000": "eip155",
+@@ -291,7 +468,10 @@
      "11297108099": "canonical",
      "11297108109": "canonical",
      "37714555429": "canonical",
