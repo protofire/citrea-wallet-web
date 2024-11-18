@@ -27,6 +27,9 @@ import useChainId from '@/hooks/useChainId'
 import { useAppSelector } from '@/store'
 import { selectAddedSafes } from '@/store/addedSafesSlice'
 import { LOAD_SAFE_EVENTS, trackEvent } from '@/services/analytics'
+import ExternalLink from '@/components/common/ExternalLink'
+import { AppRoutes } from '@/config/routes'
+import Link from 'next/link'
 // import { AppRoutes } from '@/config/routes'
 // import MUILink from '@mui/material/Link'
 // import Link from 'next/link'
@@ -133,15 +136,19 @@ const SetAddressStep = ({ data, onSubmit, onBack }: StepRenderProps<LoadSafeForm
               </Box>
             </Grid>
           </Grid>
-
           <AddressInput
             data-testid="address-section"
             label="Safe Account"
             validate={validateSafeAddress}
             name={Field.address}
           />
-
-          <Typography mt={4}>By continuing you consent to the terms of use and privacy policy .</Typography>
+          <Typography variant="body2" mt={2}>
+            By browsing this page, you accept our{' '}
+            <Link href={AppRoutes.terms}>
+              <u>Terms & Conditions</u>
+            </Link>{' '}
+            .
+          </Typography>{' '}
         </Box>
 
         <Divider />
