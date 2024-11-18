@@ -16,6 +16,9 @@ import {
 import { selectCookieBanner, openCookieBanner, closeCookieBanner } from '@/store/popupSlice'
 
 import css from './styles.module.css'
+import { AppRoutes } from '@/config/routes'
+import ExternalLink from '../ExternalLink'
+import Link from 'next/link'
 // import { AppRoutes } from '@/config/routes'
 // import ExternalLink from '../ExternalLink'
 
@@ -86,11 +89,15 @@ export const CookieAndTermBanner = ({
         <Grid container alignItems="center">
           <Grid item xs>
             <Typography variant="body2" mb={2}>
-              By browsing this page, you accept our Terms & Conditions (last updated September 2024) and the use of
-              necessary cookies. By clicking &quot;Accept all&quot; you additionally agree to the use of Beamer and
-              Analytics cookies as listed below. Cookie policy
+              By browsing this page, you accept our{' '}
+              <Link href={AppRoutes.terms}>
+                <u>Terms & Conditions </u>
+              </Link>{' '}
+              and the use of necessary cookies.
+              <Link href={AppRoutes.cookie}>
+                <u>Cookies Policy</u>{' '}
+              </Link>
             </Typography>
-
             <Grid container alignItems="center" gap={4}>
               <Grid item xs={12} sm>
                 <Box mb={2}>
