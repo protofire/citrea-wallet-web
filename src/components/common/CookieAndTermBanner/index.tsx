@@ -17,7 +17,6 @@ import { selectCookieBanner, openCookieBanner, closeCookieBanner } from '@/store
 
 import css from './styles.module.css'
 import { AppRoutes } from '@/config/routes'
-import ExternalLink from '../ExternalLink'
 import Link from 'next/link'
 // import { AppRoutes } from '@/config/routes'
 // import ExternalLink from '../ExternalLink'
