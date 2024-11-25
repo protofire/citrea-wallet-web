@@ -99,7 +99,6 @@ const CookiePolicy = () => {
         effective immediately after the date it is posted. By continuing to access or use our website after the effective
         date, you confirm your acceptance of the revised Cookie Policy.
       </p>
-    </div>
     </main >
   )
 }
