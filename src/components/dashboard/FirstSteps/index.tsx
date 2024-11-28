@@ -390,7 +390,7 @@ const FirstSteps = () => {
 
           <Grid item xs={12} md={4}>
             {isActivating ? null : isMultiSig ? (
-              <ActivateSafeWidget />
+              <ActivateSafeWidget chain={chain} />
             ) : (
               <FirstTransactionWidget completed={hasOutgoingTransactions} />
             )}
