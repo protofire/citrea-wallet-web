@@ -4,12 +4,20 @@ import type { CheckboxProps } from '@mui/material'
 import { Grid, Button, Checkbox, FormControlLabel, Typography, Paper, SvgIcon, Box } from '@mui/material'
 import WarningIcon from '@/public/images/notifications/warning.svg'
 import { useForm } from 'react-hook-form'
+import { metadata } from '@/markdown/terms/terms.md'
 
 import { useAppDispatch, useAppSelector } from '@/store'
-import { selectCookies, CookieAndTermType, saveCookieAndTermConsent } from '@/store/cookiesAndTermsSlice'
+import {
+  selectCookies,
+  CookieAndTermType,
+  saveCookieAndTermConsent,
+  hasAcceptedTerms,
+} from '@/store/cookiesAndTermsSlice'
 import { selectCookieBanner, openCookieBanner, closeCookieBanner } from '@/store/popupSlice'
 
 import css from './styles.module.css'
+import { AppRoutes } from '@/config/routes'
+import Link from 'next/link'
 // import { AppRoutes } from '@/config/routes'
 // import ExternalLink from '../ExternalLink'
 
@@ -52,7 +60,13 @@ export const CookieAndTermBanner = ({
   })
 
   const handleAccept = () => {
-    dispatch(saveCookieAndTermConsent(getValues()))
+    const values = getValues()
+    dispatch(
+      saveCookieAndTermConsent({
+        ...values,
+        termsVersion: metadata.version,
+      }),
+    )
     dispatch(closeCookieBanner())
   }
 
@@ -74,11 +88,15 @@ export const CookieAndTermBanner = ({
         <Grid container alignItems="center">
           <Grid item xs>
             <Typography variant="body2" mb={2}>
-              By browsing this page, you accept our Terms & Conditions (last updated September 2024) and the use of
-              necessary cookies. By clicking &quot;Accept all&quot; you additionally agree to the use of Beamer and
-              Analytics cookies as listed below. Cookie policy
+              By browsing this page, you accept our{' '}
+              <Link href={AppRoutes.terms}>
+                <u>Terms & Conditions </u>
+              </Link>{' '}
+              and the use of necessary cookies.
+              <Link href={AppRoutes.cookie}>
+                <u>Cookies Policy</u>{' '}
+              </Link>
             </Typography>
-
             <Grid container alignItems="center" gap={4}>
               <Grid item xs={12} sm>
                 <Box mb={2}>
@@ -135,11 +153,10 @@ export const CookieAndTermBanner = ({
 
 const CookieBannerPopup = (): ReactElement | null => {
   const cookiePopup = useAppSelector(selectCookieBanner)
-  const cookies = useAppSelector(selectCookies)
   const dispatch = useAppDispatch()
 
-  // Open the banner if cookie preferences haven't been set
-  const shouldOpen = cookies[CookieAndTermType.NECESSARY] === undefined
+  const hasAccepted = useAppSelector(hasAcceptedTerms)
+  const shouldOpen = !hasAccepted
 
   useEffect(() => {
     if (shouldOpen) {
@@ -149,11 +166,10 @@ const CookieBannerPopup = (): ReactElement | null => {
     }
   }, [dispatch, shouldOpen])
 
-  return cookiePopup?.open ? (
+  return cookiePopup.open ? (
     <div className={css.popup}>
       <CookieAndTermBanner warningKey={cookiePopup.warningKey} inverted />
     </div>
   ) : null
 }
-
 export default CookieBannerPopup

@@ -27,7 +27,7 @@ import { getTransactionTrackingType } from '@/services/analytics/tx-tracking'
 import { trackError } from '@/services/exceptions'
 import ErrorCodes from '@/services/exceptions/ErrorCodes'
 import CheckWallet from '@/components/common/CheckWallet'
-import { useLazyGetTransactionDetailsQuery } from '@/store/gateway'
+import { useLazyGetTransactionDetailsQuery } from '@/store/api/gateway'
 import NetworkWarning from '@/components/new-safe/create/NetworkWarning'
 
 type Props = {
@@ -101,6 +101,7 @@ export const SpeedUpModal = ({
           chainInfo.chainId,
           wallet.address,
           safeAddress,
+          safeTx.data.nonce,
         )
         const { data: details } = await trigger({ chainId: chainInfo.chainId, txId })
         const txType = getTransactionTrackingType(details)
@@ -114,6 +115,7 @@ export const SpeedUpModal = ({
           wallet.provider,
           wallet.address,
           safeAddress,
+          pendingTx.nonce,
         )
         // Currently all custom txs are batch executes
         trackEvent({ ...TX_EVENTS.SPEED_UP, label: 'batch' })

@@ -14,7 +14,6 @@ import BlockaidIcon from '@/public/images/transactions/blockaid-icon.svg'
 import { SafeTxContext } from '@/components/tx-flow/SafeTxProvider'
 import { type SecurityWarningProps, mapSecuritySeverity } from '../utils'
 import { BlockaidHint } from './BlockaidHint'
-import Warning from '@/public/images/notifications/alert.svg'
 import { SecuritySeverity } from '@/services/security/modules/types'
 
 export const REASON_MAPPING: Record<string, string> = {
@@ -65,7 +64,6 @@ const BlockaidResultWarning = ({
         <>
           <Alert
             severity={severityProps?.color}
-            icon={<Warning />}
             className={css.customAlert}
             sx={
               needsRiskConfirmation
@@ -136,7 +134,7 @@ const ResultDescription = ({
 
 const BlockaidError = () => {
   return (
-    <Alert severity="warning" icon={<Warning />} className={css.customAlert}>
+    <Alert severity="warning" className={css.customAlert}>
       <AlertTitle>
         <Typography fontWeight={700} variant="subtitle1">
           Proceed with caution
@@ -165,9 +163,8 @@ export const Blockaid = () => {
 }
 
 const BlockaidWarning = () => {
-  const { blockaidResponse, setIsRiskConfirmed, needsRiskConfirmation, isRiskConfirmed, isRiskIgnored } =
-    useContext(TxSecurityContext)
-  const { severity, warnings, isLoading, error } = blockaidResponse ?? {}
+  const { blockaidResponse, setIsRiskConfirmed, needsRiskConfirmation, isRiskConfirmed } = useContext(TxSecurityContext)
+  const { severity, isLoading, error } = blockaidResponse ?? {}
 
   const { safeTx } = useContext(SafeTxContext)
 
@@ -217,11 +214,7 @@ export const BlockaidMessage = () => {
   return (
     <Box display="flex" flexDirection="column" gap={1}>
       {sortedSeverities.map((key) => (
-        <BlockaidHint
-          key={key}
-          severity={Number(key)}
-          warnings={groupedShownWarnings[key].map((warning) => warning.description)}
-        />
+        <BlockaidHint key={key} warnings={groupedShownWarnings[key].map((warning) => warning.description)} />
       ))}
     </Box>
   )
