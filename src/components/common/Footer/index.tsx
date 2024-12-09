@@ -47,6 +47,9 @@ const Footer = (): ReactElement | null => {
     <footer className={css.container}>
       <ul>
         <li>
+          This is a Safe{'{'}Wallet{'}'} Partner website
+        </li>
+        <li>
           <ExternalLink href={DISCORD_URL} noIcon sx={{ span: { textDecoration: 'underline' } }}>
             <SvgIcon component={DiscordIcon} inheritViewBox fontSize="inherit" sx={{ mr: 0.5 }} />
           </ExternalLink>
