@@ -13,13 +13,13 @@ import { CookieAndTermType, hasConsentFor } from '@/store/cookiesAndTermsSlice'
 import { openCookieBanner } from '@/store/popupSlice'
 // import BeamerIcon from '@/public/images/sidebar/whats-new.svg'
 import HelpCenterIcon from '@/public/images/sidebar/help-center.svg'
-import { Link, ListItem, SvgIcon, Typography } from '@mui/material'
+import { ListItem, SvgIcon, Typography } from '@mui/material'
 import DebugToggle from '../DebugToggle'
 import { HELP_CENTER_URL, IS_PRODUCTION } from '@/config/constants'
 import { useCurrentChain } from '@/hooks/useChains'
-import darkPalette from '@/components/theme/darkPalette'
 import ProtofireLogo from '@/public/images/protofire-logo.svg'
 import SuggestionIcon from '@/public/images/sidebar/lightbulb_icon.svg'
+import ExternalLink from '@/components/common/ExternalLink'
 
 export const NEW_SUGGESTION_FORM =
   'https://docs.google.com/forms/d/e/1FAIpQLSfojsADYCiWq9AqbLqsUTzCDSpA8FMgdAQp0Pyl0BOeurlq9A/viewform'
@@ -81,9 +81,9 @@ const SidebarFooter = (): ReactElement => {
             fontSize="small"
             sx={{ verticalAlign: 'middle', mx: 0.5 }}
           />
-          <Link href="https://protofire.io" sx={{ color: darkPalette.primary.main, textDecoration: 'none' }}>
+          <ExternalLink href="https://protofire.io" sx={{ textDecoration: 'none' }} noIcon>
             Protofire
-          </Link>
+          </ExternalLink>
         </Typography>
       </SidebarListItemText>
     </SidebarList>
