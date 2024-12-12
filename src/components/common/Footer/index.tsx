@@ -12,7 +12,6 @@ import { DISCORD_URL, HELP_CENTER_URL, TWITTER_URL } from '@/config/constants'
 import ProtofireLogo from '@/public/images/protofire-logo.svg'
 import TwitterIcon from '@mui/icons-material/Twitter'
 import DiscordIcon from '@/public/images/common/discord-icon.svg'
-import darkPalette from '@/components/theme/darkPalette'
 
 const footerPages = [
   AppRoutes.welcome.index,
@@ -87,9 +86,9 @@ const Footer = (): ReactElement | null => {
               fontSize="small"
               sx={{ verticalAlign: 'middle', mx: 0.5 }}
             />
-            <MUILink href="https://protofire.io" sx={{ color: darkPalette.primary.main, textDecoration: 'none' }}>
+            <ExternalLink href="https://protofire.io" sx={{ textDecoration: 'none' }} noIcon>
               Protofire
-            </MUILink>
+            </ExternalLink>
           </Typography>
         </li>
       </ul>
