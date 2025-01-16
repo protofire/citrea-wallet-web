@@ -21,11 +21,10 @@ import ProtofireLogo from '@/public/images/protofire-logo.svg'
 import SuggestionIcon from '@/public/images/sidebar/lightbulb_icon.svg'
 import ExternalLink from '@/components/common/ExternalLink'
 
-export const NEW_SUGGESTION_FORM =
-  'https://docs.google.com/forms/d/e/1FAIpQLSfojsADYCiWq9AqbLqsUTzCDSpA8FMgdAQp0Pyl0BOeurlq9A/viewform'
+export const NEW_SUGGESTION_FORM = 'https://safe-feature-request.protofire.io'
 
 const SidebarFooter = (): ReactElement => {
-  const dispatch = useAppDispatch()
+  //const dispatch = useAppDispatch()
   const chain = useCurrentChain()
   const hasBeamerConsent = useAppSelector((state) => hasConsentFor(state, CookieAndTermType.UPDATES))
 
@@ -36,11 +35,11 @@ const SidebarFooter = (): ReactElement => {
     }
   }, [hasBeamerConsent, chain?.shortName])
 
-  const handleBeamer = () => {
-    if (!hasBeamerConsent) {
-      dispatch(openCookieBanner({ warningKey: CookieAndTermType.UPDATES }))
-    }
-  }
+  // const handleBeamer = () => {
+  //   if (!hasBeamerConsent) {
+  //     dispatch(openCookieBanner({ warningKey: CookieAndTermType.UPDATES }))
+  //   }
+  // }
 
   return (
     <SidebarList>
