@@ -20,6 +20,7 @@ import { useCurrentChain } from '@/hooks/useChains'
 import ProtofireLogo from '@/public/images/protofire-logo.svg'
 import SuggestionIcon from '@/public/images/sidebar/lightbulb_icon.svg'
 import ExternalLink from '@/components/common/ExternalLink'
+import SafeLogo from '@/public/images/logo-text.svg'
 
 export const NEW_SUGGESTION_FORM = 'https://safe-feature-request.protofire.io'
 
@@ -43,12 +44,18 @@ const SidebarFooter = (): ReactElement => {
 
   return (
     <SidebarList>
+      <ListItem disablePadding>
+        <SvgIcon
+          component={SafeLogo}
+          inheritViewBox
+          sx={{ height: '3.5em', verticalAlign: 'middle', width: '100%', mb: '-12%' }}
+        />
+      </ListItem>
       {!IS_PRODUCTION && (
         <ListItem disablePadding>
           <DebugToggle />
         </ListItem>
       )}
-
       <ListItem disablePadding>
         <a target="_blank" rel="noopener noreferrer" href={HELP_CENTER_URL} style={{ width: '100%' }}>
           <SidebarListItemButton>
