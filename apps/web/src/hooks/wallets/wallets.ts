@@ -4,7 +4,7 @@ import type { InitOptions } from '@web3-onboard/core'
 import coinbaseModule from '@web3-onboard/coinbase'
 import injectedWalletModule from '@web3-onboard/injected-wallets'
 import walletConnect from '@web3-onboard/walletconnect'
-// import pkModule from '@/services/private-key-module'
+import pkModule from '@/services/private-key-module'
 
 import { CGW_NAMES, WALLET_KEYS } from './consts'
 
