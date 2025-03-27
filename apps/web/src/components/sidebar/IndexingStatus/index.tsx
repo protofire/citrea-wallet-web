@@ -14,6 +14,7 @@ const useIndexingStatus = () => {
   const chainId = useChainId()
   const [count] = useIntervalCounter(POLL_INTERVAL)
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   return useAsync(
     () => {
       return getIndexingStatus(chainId)

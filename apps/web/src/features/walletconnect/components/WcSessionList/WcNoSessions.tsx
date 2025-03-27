@@ -47,7 +47,7 @@ const WcNoSessions = () => {
     setShowDapps(false)
   }, [setShowDapps])
 
-  const sampleDapps = showDapps && safeLoaded && <WcSampleDapps onUnload={onUnload} />
+  const _sampleDapps = showDapps && safeLoaded && <WcSampleDapps onUnload={onUnload} />
 
   return (
     <>

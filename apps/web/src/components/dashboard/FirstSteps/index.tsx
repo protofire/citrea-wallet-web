@@ -103,7 +103,7 @@ const ActivationStatusWidget = ({ explorerLink }: { explorerLink?: string }) => 
   )
 }
 
-const UsefulHintsWidget = () => {
+const _UsefulHintsWidget = () => {
   return (
     <StatusCard
       badge={
@@ -383,7 +383,7 @@ const FirstSteps = () => {
   const undeployedSafe = useAppSelector((state) => selectUndeployedSafe(state, safe.chainId, safeAddress))
 
   const isMultiSig = safe.threshold > 1
-  const isReplayedSafe = undeployedSafe && isReplayedSafeProps(undeployedSafe?.props)
+  const _isReplayedSafe = undeployedSafe && isReplayedSafeProps(undeployedSafe?.props)
 
   const hasNonZeroBalance = balances && (balances.items.length > 1 || BigInt(balances.items[0]?.balance || 0) > 0)
   const hasOutgoingTransactions = !!outgoingTransactions && outgoingTransactions.length > 0

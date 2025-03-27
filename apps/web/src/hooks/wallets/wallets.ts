@@ -4,7 +4,7 @@ import type { InitOptions } from '@web3-onboard/core'
 import coinbaseModule from '@web3-onboard/coinbase'
 import injectedWalletModule from '@web3-onboard/injected-wallets'
 import walletConnect from '@web3-onboard/walletconnect'
-import pkModule from '@/services/private-key-module'
+// import pkModule from '@/services/private-key-module'
 
 import { CGW_NAMES, WALLET_KEYS } from './consts'
 
@@ -39,7 +39,7 @@ const WALLET_MODULES: Partial<{ [_key in WALLET_KEYS]: (chain: ChainInfo) => Wal
   [WALLET_KEYS.INJECTED]: () => injectedWalletModule() as WalletInit,
   [WALLET_KEYS.WALLETCONNECT_V2]: (chain) => walletConnectV2(chain) as WalletInit,
   [WALLET_KEYS.COINBASE]: () => coinbaseModule({ darkMode: prefersDarkMode() }) as WalletInit,
-  [WALLET_KEYS.PK]: (chain) => pkModule(chain.chainId, chain.rpcUri) as WalletInit,
+  // [WALLET_KEYS.PK]: (chain) => pkModule(chain.chainId, chain.rpcUri) as WalletInit,
 }
 
 export const getAllWallets = (chain: ChainInfo): WalletInits => {
