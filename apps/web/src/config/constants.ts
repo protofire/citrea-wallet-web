@@ -97,7 +97,7 @@ export const RECOVERY_FEEDBACK_FORM =
   'https://noteforms.com/forms/safe-feedback-form-hk16ds?notionforms=1&utm_source=notionforms'
 
 // Social
-export const DISCORD_URL = 'https://gateway.staging.safe.citrea.xyz'
+export const DISCORD_URL = 'https://discord.com/invite/citrea'
 export const TWITTER_URL = 'https://x.com/citrea_xyz'
 
 // Legal
