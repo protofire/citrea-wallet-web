@@ -44,13 +44,6 @@ const SidebarFooter = (): ReactElement => {
 
   return (
     <SidebarList>
-      <ListItem disablePadding>
-        <SvgIcon
-          component={SafeLogo}
-          inheritViewBox
-          sx={{ height: '3.5em', verticalAlign: 'middle', width: '100%', mb: '-12%' }}
-        />
-      </ListItem>
       {!IS_PRODUCTION && (
         <ListItem disablePadding>
           <DebugToggle />
@@ -77,6 +70,13 @@ const SidebarFooter = (): ReactElement => {
             <SidebarListItemText bold>New Features Suggestion?</SidebarListItemText>
           </SidebarListItemButton>
         </a>
+      </ListItem>
+      <ListItem disablePadding>
+        <SvgIcon
+          component={SafeLogo}
+          inheritViewBox
+          sx={{ height: '3.5em', verticalAlign: 'middle', width: '100%', mb: '-12%' }}
+        />
       </ListItem>
       <SidebarListItemText sx={{ marginLeft: 2 }}>
         <Typography variant="caption">

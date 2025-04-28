@@ -10,7 +10,7 @@ import ExternalLink from '../ExternalLink'
 import MUILink from '@mui/material/Link'
 import { DISCORD_URL, HELP_CENTER_URL, TWITTER_URL } from '@/config/constants'
 import ProtofireLogo from '@/public/images/protofire-logo.svg'
-import TwitterIcon from '@mui/icons-material/Twitter'
+//import TwitterIcon from '@mui/icons-material/Twitter'
 import DiscordIcon from '@/public/images/common/discord-icon.svg'
 
 const footerPages = [
@@ -55,7 +55,7 @@ const Footer = (): ReactElement | null => {
         </li>
         <li>
           <ExternalLink href={TWITTER_URL} noIcon sx={{ span: { textDecoration: 'underline' } }}>
-            <SvgIcon component={TwitterIcon} inheritViewBox fontSize="inherit" sx={{ mr: 0.5 }} />
+            X
           </ExternalLink>
         </li>
         <li>
