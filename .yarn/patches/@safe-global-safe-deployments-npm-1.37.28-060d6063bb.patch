@@ -1,0 +1,234 @@
+diff --git a/dist/assets/v1.3.0/compatibility_fallback_handler.json b/dist/assets/v1.3.0/compatibility_fallback_handler.json
+index 41bec5974bd409c7836da62923a1b3c0c1feb7c8..a242691e597690dd41bcbb0829604db58c4deff6 100644
+--- a/dist/assets/v1.3.0/compatibility_fallback_handler.json
++++ b/dist/assets/v1.3.0/compatibility_fallback_handler.json
+@@ -21,7 +21,7 @@
+         "3": "canonical",
+         "4": "canonical",
+         "5": "canonical",
+-        "10": ["eip155", "canonical"],
++        "5115": ["eip155", "canonical"],
+         "11": "canonical",
+         "12": "canonical",
+         "14": "canonical",
+diff --git a/dist/assets/v1.3.0/create_call.json b/dist/assets/v1.3.0/create_call.json
+index e8b99c76bdc2e6e5f805df1e3804515686043e85..05462318a9fbc9bdf8b86013d85a480d4eef8a68 100644
+--- a/dist/assets/v1.3.0/create_call.json
++++ b/dist/assets/v1.3.0/create_call.json
+@@ -21,7 +21,7 @@
+         "3": "canonical",
+         "4": "canonical",
+         "5": "canonical",
+-        "10": ["eip155", "canonical"],
++        "5115": ["eip155", "canonical"],
+         "11": "canonical",
+         "12": "canonical",
+         "14": "canonical",
+diff --git a/dist/assets/v1.3.0/gnosis_safe.json b/dist/assets/v1.3.0/gnosis_safe.json
+index a339faf6d0ae5cfa18c9766a7382850066fbae9d..87a0d846acaf6419deae2881beb505a56cdc8fea 100644
+--- a/dist/assets/v1.3.0/gnosis_safe.json
++++ b/dist/assets/v1.3.0/gnosis_safe.json
+@@ -21,7 +21,7 @@
+         "3": "canonical",
+         "4": "canonical",
+         "5": "canonical",
+-        "10": ["eip155", "canonical"],
++        "5115": ["eip155", "canonical"],
+         "11": "canonical",
+         "12": "canonical",
+         "14": "canonical",
+diff --git a/dist/assets/v1.3.0/gnosis_safe_l2.json b/dist/assets/v1.3.0/gnosis_safe_l2.json
+index ef975187519c15091f1408232e0253dfe1aaee8e..bf1a7cbbdb122abe317b18ca0dc85925a50c4c39 100644
+--- a/dist/assets/v1.3.0/gnosis_safe_l2.json
++++ b/dist/assets/v1.3.0/gnosis_safe_l2.json
+@@ -21,7 +21,7 @@
+         "3": "canonical",
+         "4": "canonical",
+         "5": "canonical",
+-        "10": ["eip155", "canonical"],
++        "5115": ["eip155", "canonical"],
+         "11": "canonical",
+         "12": "canonical",
+         "14": "canonical",
+diff --git a/dist/assets/v1.3.0/multi_send.json b/dist/assets/v1.3.0/multi_send.json
+index 017ae9a9572309a1b2d4f14c01f1851dc9d2db62..5143685929e7c960853a170a652e4f860a29cb6a 100644
+--- a/dist/assets/v1.3.0/multi_send.json
++++ b/dist/assets/v1.3.0/multi_send.json
+@@ -21,7 +21,7 @@
+         "3": "canonical",
+         "4": "canonical",
+         "5": "canonical",
+-        "10": ["eip155", "canonical"],
++        "5115": ["eip155", "canonical"],
+         "11": "canonical",
+         "12": "canonical",
+         "14": "canonical",
+diff --git a/dist/assets/v1.3.0/multi_send_call_only.json b/dist/assets/v1.3.0/multi_send_call_only.json
+index d767f6b3d6139d5e301a535575accca94193d105..f2d03c194265061d8df5728762a3bca8c3357e57 100644
+--- a/dist/assets/v1.3.0/multi_send_call_only.json
++++ b/dist/assets/v1.3.0/multi_send_call_only.json
+@@ -21,7 +21,7 @@
+         "3": "canonical",
+         "4": "canonical",
+         "5": "canonical",
+-        "10": ["eip155", "canonical"],
++        "5115": ["eip155", "canonical"],
+         "11": "canonical",
+         "12": "canonical",
+         "14": "canonical",
+diff --git a/dist/assets/v1.3.0/proxy_factory.json b/dist/assets/v1.3.0/proxy_factory.json
+index 9280f4df3b13280531ed79a83e4bf101b619262c..b56c98263f8141aaa82c8c8e801798b40f6bf206 100644
+--- a/dist/assets/v1.3.0/proxy_factory.json
++++ b/dist/assets/v1.3.0/proxy_factory.json
+@@ -21,7 +21,7 @@
+         "3": "canonical",
+         "4": "canonical",
+         "5": "canonical",
+-        "10": ["eip155", "canonical"],
++        "5115": ["eip155", "canonical"],
+         "11": "canonical",
+         "12": "canonical",
+         "14": "canonical",
+diff --git a/dist/assets/v1.3.0/sign_message_lib.json b/dist/assets/v1.3.0/sign_message_lib.json
+index 9865e7d6de11a289da28636a24c115329819f0d8..b54dd6004a065e6a1e3ad41b236fad8ea5088ecc 100644
+--- a/dist/assets/v1.3.0/sign_message_lib.json
++++ b/dist/assets/v1.3.0/sign_message_lib.json
+@@ -21,7 +21,7 @@
+         "3": "canonical",
+         "4": "canonical",
+         "5": "canonical",
+-        "10": ["eip155", "canonical"],
++        "5115": ["eip155", "canonical"],
+         "11": "canonical",
+         "12": "canonical",
+         "14": "canonical",
+diff --git a/dist/assets/v1.3.0/simulate_tx_accessor.json b/dist/assets/v1.3.0/simulate_tx_accessor.json
+index 0df16564b8713e796af65db460833635e937a9ef..c9f454ed3084b231c192f9afad4190336db772d6 100644
+--- a/dist/assets/v1.3.0/simulate_tx_accessor.json
++++ b/dist/assets/v1.3.0/simulate_tx_accessor.json
+@@ -21,7 +21,7 @@
+         "3": "canonical",
+         "4": "canonical",
+         "5": "canonical",
+-        "10": ["eip155", "canonical"],
++        "5115": ["eip155", "canonical"],
+         "11": "canonical",
+         "12": "canonical",
+         "14": "canonical",
+diff --git a/src/assets/v1.3.0/compatibility_fallback_handler.json b/src/assets/v1.3.0/compatibility_fallback_handler.json
+index 3cab3a7c687fd3e457e40f4a45ed7819bf759882..2ece5c3f3b3d3113495cd56a862b2417fa3f9c98 100644
+--- a/src/assets/v1.3.0/compatibility_fallback_handler.json
++++ b/src/assets/v1.3.0/compatibility_fallback_handler.json
+@@ -21,7 +21,7 @@
+     "3": "canonical",
+     "4": "canonical",
+     "5": "canonical",
+-    "10": ["eip155", "canonical"],
++    "5115": ["eip155", "canonical"],
+     "11": "canonical",
+     "12": "canonical",
+     "14": "canonical",
+diff --git a/src/assets/v1.3.0/create_call.json b/src/assets/v1.3.0/create_call.json
+index 6d4d01c78966741690dcab501ce957061d282ce5..d53ce8c54896c94c9625e1f783fe15c9de826e9d 100644
+--- a/src/assets/v1.3.0/create_call.json
++++ b/src/assets/v1.3.0/create_call.json
+@@ -21,7 +21,7 @@
+     "3": "canonical",
+     "4": "canonical",
+     "5": "canonical",
+-    "10": ["eip155", "canonical"],
++    "5115": ["eip155", "canonical"],
+     "11": "canonical",
+     "12": "canonical",
+     "14": "canonical",
+diff --git a/src/assets/v1.3.0/gnosis_safe.json b/src/assets/v1.3.0/gnosis_safe.json
+index 6ccbd165adbcff77f1063204300b407fbc4687c7..b2e8ef67ec20407f55e8289bdbca10558840cca4 100644
+--- a/src/assets/v1.3.0/gnosis_safe.json
++++ b/src/assets/v1.3.0/gnosis_safe.json
+@@ -21,7 +21,7 @@
+     "3": "canonical",
+     "4": "canonical",
+     "5": "canonical",
+-    "10": ["eip155", "canonical"],
++    "5115": ["eip155", "canonical"],
+     "11": "canonical",
+     "12": "canonical",
+     "14": "canonical",
+diff --git a/src/assets/v1.3.0/gnosis_safe_l2.json b/src/assets/v1.3.0/gnosis_safe_l2.json
+index fe9b5a66cb23735c8894e11dde2057f2b06913ce..db76b4443834050377cb9b6927b51afd14a79fe7 100644
+--- a/src/assets/v1.3.0/gnosis_safe_l2.json
++++ b/src/assets/v1.3.0/gnosis_safe_l2.json
+@@ -21,7 +21,7 @@
+     "3": "canonical",
+     "4": "canonical",
+     "5": "canonical",
+-    "10": ["eip155", "canonical"],
++    "5115": ["eip155", "canonical"],
+     "11": "canonical",
+     "12": "canonical",
+     "14": "canonical",
+diff --git a/src/assets/v1.3.0/multi_send.json b/src/assets/v1.3.0/multi_send.json
+index 26ca3a4051c3ee092d42a1ebb554757ec6a41c01..efa76bdcdff67fb3794dc175d8f0e7b8fcf8cca1 100644
+--- a/src/assets/v1.3.0/multi_send.json
++++ b/src/assets/v1.3.0/multi_send.json
+@@ -21,7 +21,7 @@
+     "3": "canonical",
+     "4": "canonical",
+     "5": "canonical",
+-    "10": ["eip155", "canonical"],
++    "5115": ["eip155", "canonical"],
+     "11": "canonical",
+     "12": "canonical",
+     "14": "canonical",
+diff --git a/src/assets/v1.3.0/multi_send_call_only.json b/src/assets/v1.3.0/multi_send_call_only.json
+index c2220cd8a99cac42f7f750c1ad9f836219f3e01b..921905bd7d78599f43729e087515375163933681 100644
+--- a/src/assets/v1.3.0/multi_send_call_only.json
++++ b/src/assets/v1.3.0/multi_send_call_only.json
+@@ -21,7 +21,7 @@
+     "3": "canonical",
+     "4": "canonical",
+     "5": "canonical",
+-    "10": ["eip155", "canonical"],
++    "5115": ["eip155", "canonical"],
+     "11": "canonical",
+     "12": "canonical",
+     "14": "canonical",
+diff --git a/src/assets/v1.3.0/proxy_factory.json b/src/assets/v1.3.0/proxy_factory.json
+index 0bdffb30f057fb609aaffad3547a76b71e245bc7..204038a47ae1e74136e8c800373d12f8a890658b 100644
+--- a/src/assets/v1.3.0/proxy_factory.json
++++ b/src/assets/v1.3.0/proxy_factory.json
+@@ -21,7 +21,7 @@
+     "3": "canonical",
+     "4": "canonical",
+     "5": "canonical",
+-    "10": ["eip155", "canonical"],
++    "5115": ["eip155", "canonical"],
+     "11": "canonical",
+     "12": "canonical",
+     "14": "canonical",
+diff --git a/src/assets/v1.3.0/sign_message_lib.json b/src/assets/v1.3.0/sign_message_lib.json
+index 88844d1ebe6c9a1c0fb0e1c8a7985259cdbeee95..72c076d796b995dee615fe0cc227ddd684b8f122 100644
+--- a/src/assets/v1.3.0/sign_message_lib.json
++++ b/src/assets/v1.3.0/sign_message_lib.json
+@@ -21,7 +21,7 @@
+     "3": "canonical",
+     "4": "canonical",
+     "5": "canonical",
+-    "10": ["eip155", "canonical"],
++    "5115": ["eip155", "canonical"],
+     "11": "canonical",
+     "12": "canonical",
+     "14": "canonical",
+diff --git a/src/assets/v1.3.0/simulate_tx_accessor.json b/src/assets/v1.3.0/simulate_tx_accessor.json
+index ec9bedfb071e9fa6eeb5c12c79ae4867367293d3..982c237de8e71f1ef884e4f3cdf8b6898f8fefb3 100644
+--- a/src/assets/v1.3.0/simulate_tx_accessor.json
++++ b/src/assets/v1.3.0/simulate_tx_accessor.json
+@@ -21,7 +21,7 @@
+     "3": "canonical",
+     "4": "canonical",
+     "5": "canonical",
+-    "10": ["eip155", "canonical"],
++    "5115": ["eip155", "canonical"],
+     "11": "canonical",
+     "12": "canonical",
+     "14": "canonical",
